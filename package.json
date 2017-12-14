@@ -1,8 +1,12 @@
 {
-  "name": "react-mic-recorder",
+  "name": "speech-tagger",
+  "homepage": "http://ryanwhite04.github.io/speech-tagger",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "dedent": "^0.7.0",
+    "downloadjs": "^1.4.7",
+    "gh-pages": "^1.1.0",
     "material-ui": "^0.20.0",
     "prop-types": "^15.6.0",
     "react": "^16.2.0",
@@ -11,6 +15,8 @@
     "react-scripts": "1.0.17"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
