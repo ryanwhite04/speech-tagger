@@ -19,11 +19,11 @@ export default class App extends Component {
   handleChange = (event, index, value) => this.setState({ sentence: value });
 
   render = () => {
-    // let transcript = transcripts[this.state.sentence];
-    let transcript = [
-      'abcd',
-      'a b c d',
-    ];
+    let transcript = transcripts[this.state.sentence];
+    // let transcript = [
+    //   'abcd',
+    //   'a b c d',
+    // ];
     return <MuiThemeProvider>
       <Recorder sentence={this.state.sentence} transcript={transcript}>
         <SelectField
