@@ -5,35 +5,49 @@ import SelectField from 'material-ui/SelectField';
 import MenuItem from 'material-ui/MenuItem';
 import transcripts from './transcripts';
 import './App.css';
-
-let items = transcripts
-  .slice(0, 100).map((transcript, i) =>
-    <MenuItem value={i} key={i} primaryText={`Sentence ${i}`} secondaryText={transcript[0]} />
-)
-
 export default class App extends Component {
+
   state = {
     sentence: 0,
   };
 
   handleChange = (event, index, value) => this.setState({ sentence: value });
 
-  render = () => {
-    let transcript = transcripts[this.state.sentence];
-    // let transcript = [
-    //   'abcd',
-    //   'a b c d',
-    // ];
-    return <MuiThemeProvider>
-      <Recorder sentence={this.state.sentence} transcript={transcript}>
-        <SelectField
-          value={this.state.sentence}
-          onChange={this.handleChange}
-          autoWidth
-          maxHeight={200}
-        >{items}
-        </SelectField>
-      </Recorder>
-    </MuiThemeProvider>;
+  get transcripts() {
+    return process.env.NODE_ENV === 'development' ? [
+      ['abcd', 'a b c d'],
+      ['efgh', 'e f g h'],
+      ['ijkl', 'i j k l'],
+      transcripts[0],
+    ] : transcripts;
   }
+
+  get items() {
+    return this.transcripts.map((transcript, i) =>
+      <MenuItem value={i} key={i} primaryText={`Sentence ${i}`} secondaryText={transcript[0]} />
+    );
+  }
+
+  get transcript() {
+    return this.transcripts[this.state.sentence]
+  }
+
+  render = () => <MuiThemeProvider>
+    <Recorder sentence={this.state.sentence} transcript={this.transcript}>
+      <SelectField
+        value={this.state.sentence}
+        onChange={this.handleChange}
+        autoWidth
+        maxHeight={200}
+      >{this.items}
+      </SelectField>
+    </Recorder>
+  </MuiThemeProvider>
 }
+
+/* TODO
+ - randomize sentence order
+ - save finished sentences in localStorage
+ - add spacebarshortcut for all actions
+ - use object to store recordings rather than key
+ 

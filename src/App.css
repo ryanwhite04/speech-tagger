@@ -5,5 +5,9 @@
 video::cue {
   background: white;
   color: #00BCD4;
-  font-size: 8em;
+  font-size: 2em;
+}
+
+FloatingActionButton {
+  margin: 20px;
 }

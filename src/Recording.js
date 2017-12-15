@@ -4,62 +4,61 @@ import FloatingActionButton from 'material-ui/FloatingActionButton';
 import FileFileDownload from 'material-ui/svg-icons/file/file-download';
 import ContentClear from 'material-ui/svg-icons/content/clear';
 import dedent from 'dedent';
-
-let styles = {
-  fab: {
-    margin: 20,
-  },
-};
-
-console.log({ download });
-
+import './App.css';
 export default ({
   sentence, transcript,
-  blob: { blob, blobURL, endTime },
-  tags,
+  blob, ends, tags,
   clear = sentence => console.log('clearing sentence ', sentence),
 }) => {
-  let vtt = new Blob([createVTT(tags)], { type: 'text/vtt' });
-  // let url = URL.createObjectURL(vtt);
-  let url = `${process.env.PUBLIC_URL}/example.vtt`;
+  tags = tags.map(date => date - ends[0]);
+
   return <div>
-    <video src={blobURL} autoPlay controls>
-      <track default src={url} type="text/vtt" kind="subtitles"/>
+    <video src={URL.createObjectURL(blob)} controls>
+      <track default
+        label="Hanzi"
+        src={createURL(tags)(transcript[0].replace(/\s+/g, ''))}
+        type="text/vtt"
+        kind="subtitles"
+      />
+      <track
+        label="Pinyin"
+        src={createURL(tags)(transcript[1].split(' '))}
+        type="text/vtt"
+        kind="subtitles"
+      />
     </video>
-    <FloatingActionButton style={styles.fab} onClick={save(blob, JSON.stringify(tags, null, 2), sentence)}>
+    <FloatingActionButton onClick={save(blob, JSON.stringify(tags, null, 2), sentence)}>
       <FileFileDownload/>
     </FloatingActionButton>
-    <FloatingActionButton style={styles.fab} onClick={clear(sentence)}>
+    <FloatingActionButton onClick={clear(sentence)}>
       <ContentClear/>
     </FloatingActionButton>
   </div>
 }
 
+function createURL(tags) {
+  return text => URL.createObjectURL(new Blob([createVTT(tags.map((time, index) => ({
+    time, text: text[index]
+  })))], { type: 'text/vtt' }))
+}
+
 function createVTT(tags) {
+  return dedent`WEBVTT
 
-  let addHour = ([second, ...rest]) =>
-    `00:${second.padStart(2, 0)}.${rest.join('')}`.padStart(6, 0);
-
-  let format = (time, delay = 0) =>
-    addHour((time + delay).toString().padStart(4, 0));
-
-  let toCue = ({ time, text }, delay = 1000) => {
-    console.log('toCue', { time, text })
-    return dedent`\n
-      ${format(time)} --> ${format(time, delay)}
-      ${text}\n
-    `
-  }
-
-  let vtt =  dedent`
-    WEBVTT
-    Kind: captions
-    Language: zh
-    ${tags.map(toCue)}
+    ${tags.map(toCue).join('\n\n')}
   `;
+}
 
-  console.log({ vtt });
-  return vtt;
+function toCue({ time, text, side = 500 }) {
+  return dedent`
+    ${format(time, -side)} --> ${format(time, side)}
+    ${text}
+  `
+}
+
+function format(unix) {
+  let seconds = (~~(unix/1000)).toString().slice(-2).padStart(2, 0);
+  return `00:${seconds}.${unix % 1000}`;
 }
 
 function save(blob, tags, name) {
