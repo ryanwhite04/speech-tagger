@@ -4,12 +4,26 @@ import Recorder from './Recorder';
 import SelectField from 'material-ui/SelectField';
 import MenuItem from 'material-ui/MenuItem';
 import transcripts from './transcripts';
+import AppBar from 'material-ui/AppBar';
 import './App.css';
 export default class App extends Component {
 
   state = {
     sentence: 0,
+    complete: [],
   };
+
+  next = () => {
+
+  }
+
+  prev = () => {
+
+  }
+
+  pick = () => {
+    // this.setState(sentence)
+  }
 
   handleChange = (event, index, value) => this.setState({ sentence: value });
 
@@ -33,7 +47,9 @@ export default class App extends Component {
   }
 
   render = () => <MuiThemeProvider>
-    <Recorder sentence={this.state.sentence} transcript={this.transcript}>
+    <div>
+      <AppBar title="Speech Tagger"/>
+      <Recorder sentence={this.state.sentence} transcript={this.transcript}/>
       <SelectField
         value={this.state.sentence}
         onChange={this.handleChange}
@@ -41,6 +57,6 @@ export default class App extends Component {
         maxHeight={200}
       >{this.items}
       </SelectField>
-    </Recorder>
+    </div>
   </MuiThemeProvider>
 }
