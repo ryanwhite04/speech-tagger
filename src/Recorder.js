@@ -5,6 +5,7 @@ import AvMic from 'material-ui/svg-icons/av/mic';
 import AvMicOff from 'material-ui/svg-icons/av/mic-off';
 import { ReactMic } from 'react-mic';
 import Recording from './Recording';
+import Mousetrap from 'mousetrap';
 export default class Recorder extends Component {
 
   static defaultProps = {}
@@ -16,14 +17,39 @@ export default class Recorder extends Component {
     time: Date.now(),
   }
 
+  componentDidMount() {
+    Mousetrap.bind(['space'], e => {
+      if (e.preventDefault) {
+        e.preventDefault();
+      } else {
+        e.returnValue = false;
+      }
+      this.toggle()
+    });
+    Mousetrap.bind(['enter'], this.tag);
+  }
+
+  componentWillUnmount() {
+    Mousetrap.unbind(['space'], e => {
+      if (e.preventDefault) {
+        e.preventDefault();
+      } else {
+        e.returnValue = false;
+      }
+      this.toggle()
+    });
+    Mousetrap.unbind(['enter'], this.tag);
+  }
+
   toggle = () => this.setState(({ record, time }) => ({
     record: !record,
     time: record ? time : Date.now(),
   }))
 
-  tag = () => this.setState(({ tags }) => ({
-    tags: [...tags, Date.now() ]
-  }))
+  tag = () => this.setState(({ record, tags }) => {
+    return record && tags.length < this.count ?
+      { tags: [...tags, Date.now() ] } : {}
+  })
 
   onStop = ({ blob }) => this.state.tags.length === this.count ? this.setState(({
     // state
@@ -57,10 +83,14 @@ export default class Recorder extends Component {
       <li>Characters: {this.props.transcript[1].split(' ').length}</li>
     </ul>
     <div>
-      <FloatingActionButton onClick={this.toggle}>
+      <FloatingActionButton
+        className="FloatingActionButton"
+        onClick={this.toggle}>
          {this.state.record ? <AvMicOff/> : <AvMic/>}
       </FloatingActionButton>
-      <FloatingActionButton onClick={this.tag}
+      <FloatingActionButton
+        className="FloatingActionButton"
+        onClick={this.tag}
         disabled={!this.state.record || this.state.tags.length === this.count}
       ><ContentAdd/>
       </FloatingActionButton>

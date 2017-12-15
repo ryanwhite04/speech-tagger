@@ -8,6 +8,10 @@ video::cue {
   font-size: 2em;
 }
 
-FloatingActionButton {
+.FloatingActionButton {
+  margin: 20px;
+}
+
+canvas {
   margin: 20px;
 }

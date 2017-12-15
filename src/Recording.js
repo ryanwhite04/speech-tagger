@@ -27,10 +27,14 @@ export default ({
         kind="subtitles"
       />
     </video>
-    <FloatingActionButton onClick={save(blob, JSON.stringify(tags, null, 2), sentence)}>
+    <FloatingActionButton
+      className="FloatingActionButton"
+      onClick={save(blob, JSON.stringify(tags, null, 2), sentence)}>
       <FileFileDownload/>
     </FloatingActionButton>
-    <FloatingActionButton onClick={clear(sentence)}>
+    <FloatingActionButton
+      className="FloatingActionButton"
+      onClick={clear(sentence)}>
       <ContentClear/>
     </FloatingActionButton>
   </div>
