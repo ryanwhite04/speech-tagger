@@ -6,6 +6,7 @@ import AvMicOff from 'material-ui/svg-icons/av/mic-off';
 import { ReactMic } from 'react-mic';
 import Recording from './Recording';
 import Mousetrap from 'mousetrap';
+import SnackBar from 'material-ui/Snackbar';
 export default class Recorder extends Component {
 
   static defaultProps = {}
@@ -14,6 +15,8 @@ export default class Recorder extends Component {
     record: false,
     recordings: {},
     tags: [],
+    error: false,
+    message: "There is an error",
     time: Date.now(),
   }
 
@@ -26,7 +29,8 @@ export default class Recorder extends Component {
       }
       this.toggle()
     });
-    Mousetrap.bind(['enter'], this.tag);
+    Mousetrap.bind(['enter'], this.onEnter);
+    Mousetrap.bind(['backspace'], this.clear);
   }
 
   componentWillUnmount() {
@@ -36,9 +40,32 @@ export default class Recorder extends Component {
       } else {
         e.returnValue = false;
       }
-      this.toggle()
+      this.next()
     });
-    Mousetrap.unbind(['enter'], this.tag);
+    Mousetrap.unbind(['enter'], this.onEnter);
+    Mousetrap.unbind(['backspace'], this.clear);
+  }
+
+  onEnter = () => {
+    this.state.record ? this.tag() : this.save()
+  }
+
+  next = () => {
+    if (this.state.record) {
+      // add a tag
+      this.tag();
+    } else {
+      // start the recording
+      this.toggle();
+    }
+  }
+
+  save = () => {
+    // Download the recording
+  }
+
+  clear = () => {
+    this.setState({ recordings: {} })
   }
 
   toggle = () => this.setState(({ record, time }) => ({
@@ -48,7 +75,10 @@ export default class Recorder extends Component {
 
   tag = () => this.setState(({ record, tags }) => {
     return record && tags.length < this.count ?
-      { tags: [...tags, Date.now() ] } : {}
+      { tags: [...tags, Date.now() ] } :
+
+      // Maybe should present error instead
+      { record: false }
   })
 
   onStop = ({ blob }) => this.state.tags.length === this.count ? this.setState(({
@@ -110,6 +140,12 @@ export default class Recorder extends Component {
     <ReactMic
       record={this.state.record}
       onStop={this.onStop}
+    />
+    <SnackBar
+      open={this.state.error}
+      message={this.state.message}
+      autoHideDuration={4000}
+      onRequestClose={() => this.setState({ error: false })}
     />
   </div>
 }
