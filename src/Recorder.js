@@ -12,7 +12,7 @@ export default class Recorder extends Component {
 
   state = {
     record: false,
-    recordings: [],
+    recordings: {},
     tags: [],
     time: Date.now(),
   }
@@ -59,16 +59,19 @@ export default class Recorder extends Component {
     transcript, sentence
   }) => ({
     tags: [],
-    recordings: [...recordings, {
+    recordings: {...recordings, [sentence]: {
       transcript,
-      sentence,
       blob,
       tags,
       ends: [time, Date.now()],
-      clear: s => () => this.setState(({ recordings }) => ({
-        recordings: recordings.filter(({ sentence }) => sentence !== s ),
-      })),
-    }]
+
+      // deletes itself
+      // TODO might want to delete object URL too later
+      clear: s => () => this.setState(({ recordings }) => {
+        delete recordings[s];
+        return { recordings };
+      }),
+    }}
   })) : this.setState({ tags: [] })
 
   get count() {
@@ -96,9 +99,14 @@ export default class Recorder extends Component {
       </FloatingActionButton>
       <span>Tags: {this.state.tags.length} / {this.count}</span>
     </div>
-    <div>
-      {this.state.recordings.map(recording => <Recording {...recording} key={recording.sentence} />)}
-    </div>
+    <ul>
+      {Object.entries(this.state.recordings).map(([sentence, recording]) =>
+        <li key={sentence}>
+          <h2>Sentence: {sentence}</h2>
+          <Recording sentence={sentence} {...recording} />
+        </li>
+      )}
+    </ul>
     <ReactMic
       record={this.state.record}
       onStop={this.onStop}
