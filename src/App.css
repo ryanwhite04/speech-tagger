@@ -1,15 +1,41 @@
 .App {
   text-align: center;
 }
-
+.Mic {
+  max-width: 100%;
+  width: 100%;
+  /*margin: auto 20px;*/
+}
+.Button {
+  width: 96px !important;
+  height: 96px !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
 video::cue {
-  background: white;
+  background: #00BCD4;
+  color: white;
+  font-size: 2.5em;
+}
+video::-webkit-media-controls-panel {
   color: #00BCD4;
-  font-size: 2em;
+}
+video::-webkit-media-controls-play-button {
+  color: #00BCD4;
+}
+video::-webkit-media-controls-timeline {
+  background: #00BCD4;
+}
+video::-webkit-media-controls-volume-slider {
+  color: #00BCD4;
+  background: #00BCD4;
+
 }
 
-.mic {
-  max-width: 100%;
-  width: 380px;
-  margin: auto 20px;
+video::-webkit-media-controls-fullscreen-button {
+    /*display: none !important;*/
+}
+
+video::-internal-media-controls-download-button {
+  background: #00BCD4;
 }

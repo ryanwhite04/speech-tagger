@@ -10,15 +10,16 @@ import getMuiTheme from 'material-ui/styles/getMuiTheme';
 import {
   red500,
   green500,
+  cyan500,
 } from 'material-ui/styles/colors';
 import AppBar from 'material-ui/AppBar'
 import SnackBar from 'material-ui/Snackbar';
 import Paper from 'material-ui/Paper';
-import Dialog from 'material-ui/Dialog';
-import FlatButton from 'material-ui/FlatButton';
+// import Dialog from 'material-ui/Dialog';
+// import FlatButton from 'material-ui/FlatButton';
 import IconButton from 'material-ui/IconButton';
 import SvgIcon from 'material-ui/SvgIcon';
-import FloatingActionButton from 'material-ui/FloatingActionButton';
+// import FloatingActionButton from 'material-ui/FloatingActionButton';
 import FileFileDownload from 'material-ui/svg-icons/file/file-download';
 import ContentClear from 'material-ui/svg-icons/content/clear';
 import ContentAdd from 'material-ui/svg-icons/content/add';
@@ -37,8 +38,39 @@ const log = debug('main');
 const theme = getMuiTheme({
   appBar: {
     position: 'fixed',
+  },
+  iconButton: {
+    width: 96,
+    height: 96,
+    padding: 48,
   }
 });
+
+const messages = {
+  errors: {
+    tag: {
+      complete: "You've already tagged all the syllables, turn off the mic to review (Hit spacebar)",
+      notRecording: "You aren't recording, turn on the mic first. (Hit spacebar)",
+    },
+    toggle: {
+      incomplete: "You need to tag all of the syllables",
+    },
+    save: {
+      incomplete: "Finish a recording before moving on to the next one",
+    }
+  },
+  notify: {
+    toggle: {
+      off: "Have a listen, and if it's all good, hit enter to download and move onto the next one."
+    },
+    clear: {
+      success: "Let's try this again",
+    },
+    save: {
+      success: "On to the next one!"
+    }
+  }
+}
 
 export default class App extends Component {
 
@@ -57,9 +89,27 @@ export default class App extends Component {
     } else {
       e.returnValue = false;
     }
-    this.props.location.state.record && !this.complete ?
-      this.tag() :
+    // this.props.location.state.record && !this.complete ?
+      // this.tag() :
       this.toggle();
+  }
+  onEnter = e => {
+    if (e.preventDefault) {
+      e.preventDefault( );
+    } else {
+      e.returnValue = false;
+    }
+    this.log('onEnter', this.props);
+    this.expanded ? this.save(): this.tag();
+  }
+  onBackspace = e => {
+    if (e.preventDefault) {
+      e.preventDefault( );
+    } else {
+      e.returnValue = false;
+    }
+    this.log('onBackspace', this.props);
+    this.clear();
   }
   toggle = () => {
     this.log('toggle', this.props);
@@ -71,23 +121,37 @@ export default class App extends Component {
   tag = () => {
     this.log('tag', this.props);
     let state = this.props.location.state;
-    this.replace({
-      tags: [...state.tags, Date.now() - state.time],
-    })
+    this.recording ?
+
+      // Recording
+      this.complete ?
+
+        // Recording and complete, already finished
+        this.replace({ message: messages.errors.tag.complete}) :
+
+        // Recording but not complete, should tag
+        this.replace({
+          tags: [...state.tags, Date.now() - state.time],
+        }) :
+
+      // Not Recording, shouldn't tag
+      this.replace({
+        message: messages.errors.tag.notRecording
+      })
   }
   onStop = ({ blob }) => {
     this.log('onStop', this.props)
     this.complete ? this.replace({
       blob,
-      message: 'Nice',
+      message: messages.notify.toggle.off,
     }) : this.replace({
       tags: [],
-      message: 'You need to tag all of the syllables',
+      message: messages.errors.toggle.incomplete,
     })
   }
   save = () => {
     this.log('save', this.props);
-    if (this.props.location.state.blob) {
+    if (this.complete) {
       [
         [this.props.location.state.blob, `${this.props.match.params.sentence}.webm`, 'audio/webm'],
         [JSON.stringify(this.props.location.state.tags, null, 2), `${this.props.match.params.sentence}.json`, 'text/json'],
@@ -99,7 +163,7 @@ export default class App extends Component {
         tags: [],
         record: false,
         time: Date.now(),
-        message: "Finish a recording before moving on to the next one",
+        message: messages.errors.save.incomplete,
       })
     }
   }
@@ -110,7 +174,7 @@ export default class App extends Component {
       tags: [],
       record: false,
       time: Date.now(),
-      message: "Let's try this again",
+      message: messages.notify.clear.success,
     })
   }
   replace = state => this.props.history.replace({
@@ -122,12 +186,12 @@ export default class App extends Component {
   })
   next = () => {
     this.log('next', this.props);
-    const sentence = 1 + parseInt(this.props.match.params.sentence);
+    const sentence = 1 + parseInt(this.props.match.params.sentence, 10);
     this.props.history.push(`/${sentence}`, {
       blob: false,
       tags: [],
       record: false,
-      message: 'On to the next one!',
+      message: messages.notify.save.success,
     })
   }
   back = () => {
@@ -144,6 +208,9 @@ export default class App extends Component {
   get count() {
     return this.transcript[0].length
   }
+  get recording() {
+    return this.props.location.state.record;
+  }
   get complete() {
     return this.props.location.state.tags.length === this.count
   }
@@ -154,41 +221,64 @@ export default class App extends Component {
     this.log('render', this.props);
     return (<MuiThemeProvider muiTheme={theme}>
       <div>
-        <Header title="Speech Tagger" href="https://github.com/ryanwhite04/speech-tagger"/>
-        <Paper zDepth={2} style={{ maxWidth: 420, margin: '64px auto' }}>
+        <Header
+          title="Speech Tagger"
+          showMenuIconButton={false}
+          href="https://github.com/ryanwhite04/speech-tagger"
+          style={{ position: 'fixed', top: 0 }}
+          />
+        <Paper zDepth={2} style={{ maxWidth: 420, margin: '96px auto 64px auto' }}>
           <Card expanded={this.expanded}>
             <CardTitle
               title={`Sentence ${this.props.match.params.sentence}`}
               subtitle={`${this.props.location.state.tags.length}/${this.transcript[0].length}`}
               />
-            <CardMedia><ReactMic className="mic" record={this.props.location.state.record} onStop={this.onStop}/></CardMedia>
-            <CardHeader title="Hanzi" subtitle={
-              <p>
-                <span style={{ color: green500 }}>{this.transcript[0].slice(0, this.props.location.state.tags.length).join('')}</span>
-                <span>{this.transcript[0].slice(this.props.location.state.tags.length).join('')}</span>
-              </p>
-            }/>
-            <CardHeader title="Pinyin" subtitle={
-              <p>
-                <span style={{ color: green500 }}>{this.transcript[1].slice(0, this.props.location.state.tags.length).join(' ')} </span>
-                <span>{this.transcript[1].slice(this.props.location.state.tags.length).join(' ')}</span>
-              </p>
-            }/>
+            <CardMedia>
+              <ReactMic
+                className="Mic"
+                strokeColor={cyan500}
+                record={this.props.location.state.record}
+                onStop={this.onStop}
+              />
+            </CardMedia>
+            <CardHeader title="Hanzi" subtitle="For native chinese speakers"/>
+            <CardText>
+              <span style={{ color: cyan500 }}>{this.transcript[0].slice(0, this.props.location.state.tags.length).join('')}</span>
+              <span>{this.transcript[0].slice(this.props.location.state.tags.length).join('')}</span>
+            </CardText>
+            <CardHeader title="Pinyin" subtitle="For learners of mandarin"/>
+            <CardText>
+              <span style={{ color: cyan500 }}>{this.transcript[1].slice(0, this.props.location.state.tags.length).join(' ')} </span>
+              <span>{this.transcript[1].slice(this.props.location.state.tags.length).join(' ')}</span>
+            </CardText>
             <CardActions>{
                 this.props.location.state.record ?
-                  <FlatButton label="Stop Recording" backgroundColor={red500} onClick={this.toggle} icon={<AvMicOff/>}/> :
-                  <FlatButton label="Start Recording" backgroundColor={green500} onClick={this.toggle} icon={<AvMic/>}/>
+                  <Button text="Stop Recording" color={red500} onClick={this.toggle}>
+                    <AvMicOff/>
+                  </Button> :
+                  <Button text="Start Recording" color={cyan500} onClick={this.toggle}>
+                    <AvMic/>
+                  </Button>
               }
-              <FlatButton label="Add Tag"
-                onClick={this.tag}
-                disabled={!this.props.location.state.record || this.props.location.state.tags.length === this.transcript[0].length}
-                icon={<ContentAdd/>}
-              />
-              <FlatButton label="Restart" className="Button" onClick={this.clear} icon={<ContentClear/>}/>
-              <FlatButton label="Download" className="Button" icon={<FileFileDownload/>} onClick={this.save}/>
+              <Button text="Add Tag" color={cyan500} onClick={this.tag}
+                disabled={this.expanded || this.complete || !this.recording}
+                >
+                <ContentAdd/>
+              </Button>
+              <Button color={red500} text="Restart" onClick={this.clear}
+                disabled={!this.recording && !this.complete}
+                >
+                <ContentClear/>
+              </Button>
+              <Button text="Download" onClick={this.save}
+                disabled={!this.expanded}
+                >
+                <FileFileDownload/>
+              </Button>
             </CardActions>
             <CardMedia expandable={true}>
-              <video src={this.props.location.state.blob ? URL.createObjectURL(this.props.location.state.blob) : undefined} controls>
+              <video controls style={{ backgroundColor: cyan500 }}
+                src={this.props.location.state.blob ? URL.createObjectURL(this.props.location.state.blob) : undefined}>
                 {this.props.location.state.blob && [{
                   default: true,
                   label: 'Hanzi',
@@ -211,6 +301,30 @@ export default class App extends Component {
   }
 }
 
+function Button(props) {
+  // return (<IconButton label="Add Tag"
+  //   onClick={this.tag}
+  //   disabled={this.expanded || this.complete || !this.recording}
+  //   icon={<ContentAdd/>}
+  // />)
+  const style = {
+    width: 96,
+    height: 96,
+    padding: 48,
+  };
+  const iconStyle = {
+    width: 48,
+    height: 48,
+    color: props.color || 'auto',
+  };
+  return (<IconButton tooltip={props.text} iconStyle={iconStyle} style={{
+    width: 96,
+    height: 96,
+    padding: 48,
+  }}
+  className="Button" {...props} touch/>)
+}
+
 function Toast({ children }) {
   return (<SnackBar
     open={!!children}
@@ -227,12 +341,13 @@ function GitHubIcon(props) {
   }</SvgIcon>);
 }
 
-function Header({ title, href }) {
+function Header({ title, href, showMenuIconButton, style }) {
 
-  log('Header', { title, href });
-  return (<AppBar title={title} iconElementRight={
-    <IconButton href={href}><GitHubIcon/></IconButton>
-  }/>);
+  log('Header', { title, href, showMenuIconButton, style });
+  return (<AppBar title={title} style={style}
+    showMenuIconButton={showMenuIconButton}
+    iconElementRight={<IconButton href={href}><GitHubIcon/></IconButton>}
+  />);
 }
 
 function cue(tags) {
