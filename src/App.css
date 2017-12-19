@@ -8,10 +8,8 @@ video::cue {
   font-size: 2em;
 }
 
-.FloatingActionButton {
-  margin: 20px;
-}
-
-canvas {
-  margin: 20px;
+.mic {
+  max-width: 100%;
+  width: 380px;
+  margin: auto 20px;
 }

@@ -4,9 +4,18 @@ import ContentAdd from 'material-ui/svg-icons/content/add';
 import AvMic from 'material-ui/svg-icons/av/mic';
 import AvMicOff from 'material-ui/svg-icons/av/mic-off';
 import { ReactMic } from 'react-mic';
-import Recording from './Recording';
 import Mousetrap from 'mousetrap';
 import SnackBar from 'material-ui/Snackbar';
+import {
+  Card,
+  CardActions,
+  CardHeader,
+  CardMedia,
+  CardTitle,
+  CardText
+} from 'material-ui/Card';
+import Paper from 'material-ui/Paper';
+
 export default class Recorder extends Component {
 
   static defaultProps = {}
@@ -109,38 +118,38 @@ export default class Recorder extends Component {
   }
 
   render = () => <div>
-    <div>{this.props.children}</div>
-    <ul>
-      <li>Hanzi: {this.props.transcript[0]}</li>
-      <li>Pinyin: {this.props.transcript[1]}</li>
-      <li>Characters: {this.props.transcript[1].split(' ').length}</li>
-    </ul>
-    <div>
-      <FloatingActionButton
-        className="FloatingActionButton"
-        onClick={this.toggle}>
-         {this.state.record ? <AvMicOff/> : <AvMic/>}
-      </FloatingActionButton>
-      <FloatingActionButton
-        className="FloatingActionButton"
-        onClick={this.tag}
-        disabled={!this.state.record || this.state.tags.length === this.count}
-      ><ContentAdd/>
-      </FloatingActionButton>
-      <span>Tags: {this.state.tags.length} / {this.count}</span>
-    </div>
-    <ul>
-      {Object.entries(this.state.recordings).map(([sentence, recording]) =>
-        <li key={sentence}>
-          <h2>Sentence: {sentence}</h2>
-          <Recording sentence={sentence} {...recording} />
-        </li>
-      )}
-    </ul>
-    <ReactMic
-      record={this.state.record}
-      onStop={this.onStop}
-    />
+    <Paper zDepth={2} style={{ maxWidth: 420, margin: '64px auto' }}>
+    <Card>
+      <CardTitle
+        title={`Sentence ${this.props.sentence}`}
+        subtitle={`${this.state.tags.length}/${this.count}`}
+      />
+      <CardMedia>
+        <ReactMic
+          record={this.state.record}
+          onStop={this.onStop}
+        />
+      </CardMedia>
+      <CardHeader title="Hanzi" subtitle={this.props.transcript[0]} />
+      <CardHeader title="Pinyin" subtitle={this.props.transcript[1]} />
+      <CardText>
+        {this.props.children}
+      </CardText>
+      <CardActions>
+        <FloatingActionButton
+          className="FloatingActionButton"
+          onClick={this.toggle}>
+           {this.state.record ? <AvMicOff/> : <AvMic/>}
+        </FloatingActionButton>
+        <FloatingActionButton
+          className="FloatingActionButton"
+          onClick={this.tag}
+          disabled={!this.state.record || this.state.tags.length === this.count}
+        ><ContentAdd/>
+        </FloatingActionButton>
+      </CardActions>
+    </Card>
+    </Paper>
     <SnackBar
       open={this.state.error}
       message={this.state.message}

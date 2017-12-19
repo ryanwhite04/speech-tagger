@@ -4,6 +4,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "debug": "^3.1.0",
     "dedent": "^0.7.0",
     "downloadjs": "^1.4.7",
     "gh-pages": "^1.1.0",
@@ -13,6 +14,7 @@
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
     "react-mic": "^9.0.0",
+    "react-router-dom": "^4.2.2",
     "react-scripts": "1.0.17"
   },
   "scripts": {
@@ -21,6 +23,15 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "guide": "styleguidist server",
+    "guide:build": "styleguidist build",
+    "storybook": "start-storybook -p 9009 -s public",
+    "build-storybook": "build-storybook -s public"
+  },
+  "devDependencies": {
+    "@storybook/addon-actions": "^3.2.17",
+    "@storybook/addon-links": "^3.2.17",
+    "@storybook/react": "^3.2.17"
   }
 }
