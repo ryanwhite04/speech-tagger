@@ -12,6 +12,18 @@
   margin: 0 !important;
   padding: 0 !important;
 }
+.Prev {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  margin: 64px;
+}
+.Next {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  margin: 64px;
+}
 video::cue {
   background: #00BCD4;
   color: white;

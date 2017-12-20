@@ -19,12 +19,14 @@ import Paper from 'material-ui/Paper';
 // import FlatButton from 'material-ui/FlatButton';
 import IconButton from 'material-ui/IconButton';
 import SvgIcon from 'material-ui/SvgIcon';
-// import FloatingActionButton from 'material-ui/FloatingActionButton';
+import FloatingActionButton from 'material-ui/FloatingActionButton';
 import FileFileDownload from 'material-ui/svg-icons/file/file-download';
 import ContentClear from 'material-ui/svg-icons/content/clear';
 import ContentAdd from 'material-ui/svg-icons/content/add';
 import AvMic from 'material-ui/svg-icons/av/mic';
 import AvMicOff from 'material-ui/svg-icons/av/mic-off';
+import ImageNavigateBefore from 'material-ui/svg-icons/image/navigate-before';
+import ImageNavigateNext from 'material-ui/svg-icons/image/navigate-next';
 import { Card,
   CardActions,
   CardHeader,
@@ -67,7 +69,10 @@ const messages = {
       success: "Let's try this again",
     },
     save: {
-      success: "On to the next one!"
+      complete: "Downloaded! Now move on to the next one",
+    },
+    next: {
+      success: "This is the next recording",
     }
   }
 }
@@ -79,6 +84,8 @@ export default class App extends Component {
     ['space', e => this.onSpace(e)],
     ['enter', e => this.onEnter(e)],
     ['backspace', e => this.onBackspace(e)],
+    ['left', e => this.onLeft(e)],
+    ['right', e => this.onRight(e)],
   ]
   componentDidMount = () => this.bindings.map(binding => Mousetrap.bind(...binding))
   componentWillUnmount = () => this.bindings.map(binding => Mousetrap.unBind(...binding))
@@ -110,6 +117,24 @@ export default class App extends Component {
     }
     this.log('onBackspace', this.props);
     this.clear();
+  }
+  onLeft = e => {
+    if (e.preventDefault) {
+      e.preventDefault( );
+    } else {
+      e.returnValue = false;
+    }
+    this.log('onLeft', this.props);
+    this.prev();
+  }
+  onRight = e => {
+    if (e.preventDefault) {
+      e.preventDefault( );
+    } else {
+      e.returnValue = false;
+    }
+    this.log('onRight', this.props);
+    this.next();
   }
   toggle = () => {
     this.log('toggle', this.props);
@@ -156,7 +181,9 @@ export default class App extends Component {
         [this.props.location.state.blob, `${this.props.match.params.sentence}.webm`, 'audio/webm'],
         [JSON.stringify(this.props.location.state.tags, null, 2), `${this.props.match.params.sentence}.json`, 'text/json'],
       ].map(data => download(...data));
-      this.next();
+      this.replace({
+        message: messages.notify.save.complete,
+      })
     } else {
       this.replace({
         blob: false,
@@ -191,10 +218,10 @@ export default class App extends Component {
       blob: false,
       tags: [],
       record: false,
-      message: messages.notify.save.success,
+      message: messages.notify.next.success,
     })
   }
-  back = () => {
+  prev = () => {
     this.log('back', this.props);
     this.props.history.goBack()
   }
@@ -295,6 +322,12 @@ export default class App extends Component {
             </CardMedia>
           </Card>
         </Paper>
+        <FloatingActionButton className="Prev" onClick={this.prev}>
+          <ImageNavigateBefore/>
+        </FloatingActionButton>
+        <FloatingActionButton className="Next" onClick={this.next}>
+          <ImageNavigateNext/>
+        </FloatingActionButton>
         <Toast>{this.props.location.state.message}</Toast>
       </div>
     </MuiThemeProvider>)
