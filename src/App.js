@@ -1,41 +1,41 @@
 import React, { Component } from 'react'
-import dedent from 'dedent';
-import download from 'downloadjs';
-import debug from 'debug';
+import dedent from 'dedent'
+import download from 'downloadjs'
+import debug from 'debug'
 import './App.css'
-import { ReactMic } from 'react-mic';
-import Mousetrap from 'mousetrap';
-import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
-import getMuiTheme from 'material-ui/styles/getMuiTheme';
+import { ReactMic } from 'react-mic'
+import Mousetrap from 'mousetrap'
+import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider'
+import getMuiTheme from 'material-ui/styles/getMuiTheme'
 import {
   red500,
-  green500,
+  // green500,
   cyan500,
-} from 'material-ui/styles/colors';
+} from 'material-ui/styles/colors'
 import AppBar from 'material-ui/AppBar'
-import SnackBar from 'material-ui/Snackbar';
-import Paper from 'material-ui/Paper';
+import SnackBar from 'material-ui/Snackbar'
+import Paper from 'material-ui/Paper'
 // import Dialog from 'material-ui/Dialog';
 // import FlatButton from 'material-ui/FlatButton';
-import IconButton from 'material-ui/IconButton';
-import SvgIcon from 'material-ui/SvgIcon';
-import FloatingActionButton from 'material-ui/FloatingActionButton';
-import FileFileDownload from 'material-ui/svg-icons/file/file-download';
-import ContentClear from 'material-ui/svg-icons/content/clear';
-import ContentAdd from 'material-ui/svg-icons/content/add';
-import AvMic from 'material-ui/svg-icons/av/mic';
-import AvMicOff from 'material-ui/svg-icons/av/mic-off';
-import ImageNavigateBefore from 'material-ui/svg-icons/image/navigate-before';
-import ImageNavigateNext from 'material-ui/svg-icons/image/navigate-next';
+import IconButton from 'material-ui/IconButton'
+import SvgIcon from 'material-ui/SvgIcon'
+import FloatingActionButton from 'material-ui/FloatingActionButton'
+import FileFileDownload from 'material-ui/svg-icons/file/file-download'
+import ContentClear from 'material-ui/svg-icons/content/clear'
+import ContentAdd from 'material-ui/svg-icons/content/add'
+import AvMic from 'material-ui/svg-icons/av/mic'
+import AvMicOff from 'material-ui/svg-icons/av/mic-off'
+import ImageNavigateBefore from 'material-ui/svg-icons/image/navigate-before'
+import ImageNavigateNext from 'material-ui/svg-icons/image/navigate-next'
 import { Card,
   CardActions,
   CardHeader,
   CardMedia,
   CardTitle,
   CardText
-} from 'material-ui/Card';
+} from 'material-ui/Card'
 
-const log = debug('main');
+const log = debug('main')
 
 const theme = getMuiTheme({
   appBar: {
@@ -46,7 +46,7 @@ const theme = getMuiTheme({
     height: 96,
     padding: 48,
   }
-});
+})
 
 const messages = {
   errors: {
@@ -55,10 +55,10 @@ const messages = {
       notRecording: "You aren't recording, turn on the mic first. (Hit spacebar)",
     },
     toggle: {
-      incomplete: "You need to tag all of the syllables",
+      incomplete: 'You need to tag all of the syllables',
     },
     save: {
-      incomplete: "Finish a recording before moving on to the next one",
+      incomplete: 'Finish a recording before moving on to the next one',
     }
   },
   notify: {
@@ -69,17 +69,18 @@ const messages = {
       success: "Let's try this again",
     },
     save: {
-      complete: "Downloaded! Now move on to the next one",
+      complete: 'Downloaded! Now move on to the next one',
     },
     next: {
-      success: "This is the next recording",
+      success: 'This is the next recording',
     }
   }
 }
 
 export default class App extends Component {
 
-  log = debug('App')
+  log = debug('App');
+  
   bindings = [
     ['space', e => this.onSpace(e)],
     ['enter', e => this.onEnter(e)],
@@ -90,62 +91,63 @@ export default class App extends Component {
   componentDidMount = () => this.bindings.map(binding => Mousetrap.bind(...binding))
   componentWillUnmount = () => this.bindings.map(binding => Mousetrap.unBind(...binding))
   onSpace = e => {
-    this.log('onSpace', this.props);
+    this.log('onSpace', this.props)
     if (e.preventDefault) {
-      e.preventDefault( );
+      e.preventDefault( )
     } else {
-      e.returnValue = false;
+      e.returnValue = false
     }
+    log('search', this.search)
     // this.props.location.state.record && !this.complete ?
-      // this.tag() :
-      this.toggle();
+    // this.tag() :
+    this.toggle()
   }
   onEnter = e => {
     if (e.preventDefault) {
-      e.preventDefault( );
+      e.preventDefault( )
     } else {
-      e.returnValue = false;
+      e.returnValue = false
     }
-    this.log('onEnter', this.props);
-    this.expanded ? this.save(): this.tag();
+    this.log('onEnter', this.props)
+    this.expanded ? this.save(): this.tag()
   }
   onBackspace = e => {
     if (e.preventDefault) {
-      e.preventDefault( );
+      e.preventDefault( )
     } else {
-      e.returnValue = false;
+      e.returnValue = false
     }
-    this.log('onBackspace', this.props);
-    this.clear();
+    this.log('onBackspace', this.props)
+    this.clear()
   }
   onLeft = e => {
     if (e.preventDefault) {
-      e.preventDefault( );
+      e.preventDefault()
     } else {
-      e.returnValue = false;
+      e.returnValue = false
     }
-    this.log('onLeft', this.props);
-    this.prev();
+    this.log('onLeft', this.props)
+    this.prev()
   }
   onRight = e => {
     if (e.preventDefault) {
-      e.preventDefault( );
+      e.preventDefault()
     } else {
-      e.returnValue = false;
+      e.returnValue = false
     }
-    this.log('onRight', this.props);
-    this.next();
+    this.log('onRight', this.props)
+    this.next()
   }
   toggle = () => {
-    this.log('toggle', this.props);
+    this.log('toggle', this.props)
     this.replace({
       record: !this.props.location.state.record,
       time: Date.now(),
     })
   }
   tag = () => {
-    this.log('tag', this.props);
-    let state = this.props.location.state;
+    this.log('tag', this.props)
+    let state = this.props.location.state
     this.recording ?
 
       // Recording
@@ -175,12 +177,12 @@ export default class App extends Component {
     })
   }
   save = () => {
-    this.log('save', this.props);
+    this.log('save', this.props)
     if (this.complete) {
       [
         [this.props.location.state.blob, `${this.props.match.params.sentence}.webm`, 'audio/webm'],
         [JSON.stringify(this.props.location.state.tags, null, 2), `${this.props.match.params.sentence}.json`, 'text/json'],
-      ].map(data => download(...data));
+      ].map(data => download(...data))
       this.replace({
         message: messages.notify.save.complete,
       })
@@ -195,7 +197,7 @@ export default class App extends Component {
     }
   }
   clear = () => {
-    this.log('clear', this.props);
+    this.log('clear', this.props)
     this.replace({
       blob: false,
       tags: [],
@@ -212,8 +214,8 @@ export default class App extends Component {
     }
   })
   next = () => {
-    this.log('next', this.props);
-    const sentence = 1 + parseInt(this.props.match.params.sentence, 10);
+    this.log('next', this.props)
+    const sentence = 1 + parseInt(this.props.match.params.sentence, 10)
     this.props.history.push(`/${sentence}`, {
       blob: false,
       tags: [],
@@ -222,11 +224,14 @@ export default class App extends Component {
     })
   }
   prev = () => {
-    this.log('back', this.props);
+    this.log('back', this.props)
     this.props.history.goBack()
   }
+  get search() {
+    return new URLSearchParams(this.props.location.search)
+  }
   get transcript() {
-    let [hanzi, pinyin] = this.props.transcripts[this.props.match.params.sentence];
+    let [hanzi, pinyin] = this.props.transcripts[this.props.match.params.sentence]
     return [
       hanzi.replace(/\s+/g, '').split(''),
       pinyin.split(' '),
@@ -236,16 +241,16 @@ export default class App extends Component {
     return this.transcript[0].length
   }
   get recording() {
-    return this.props.location.state.record;
+    return this.props.location.state.record
   }
   get complete() {
     return this.props.location.state.tags.length === this.count
   }
   get expanded() {
     return !this.props.location.state.record && this.complete
-  }
+  }fjs
   render = () => {
-    this.log('render', this.props);
+    this.log('render', this.props)
     return (<MuiThemeProvider muiTheme={theme}>
       <div>
         <Header
@@ -253,13 +258,13 @@ export default class App extends Component {
           showMenuIconButton={false}
           href="https://github.com/ryanwhite04/speech-tagger"
           style={{ position: 'fixed', top: 0 }}
-          />
+        />
         <Paper zDepth={2} style={{ maxWidth: 420, margin: '96px auto 64px auto' }}>
           <Card expanded={this.expanded}>
             <CardTitle
               title={`Sentence ${this.props.match.params.sentence}`}
               subtitle={`${this.props.location.state.tags.length}/${this.transcript[0].length}`}
-              />
+            />
             <CardMedia>
               <ReactMic
                 className="Mic"
@@ -279,29 +284,29 @@ export default class App extends Component {
               <span>{this.transcript[1].slice(this.props.location.state.tags.length).join(' ')}</span>
             </CardText>
             <CardActions>{
-                this.props.location.state.record ?
-                  <Button text="Stop Recording" color={red500} onClick={this.toggle}>
-                    <AvMicOff/>
-                  </Button> :
-                  <Button text="Start Recording" color={cyan500} onClick={this.toggle}>
-                    <AvMic/>
-                  </Button>
-              }
-              <Button text="Add Tag" color={cyan500} onClick={this.tag}
-                disabled={this.expanded || this.complete || !this.recording}
-                >
-                <ContentAdd/>
-              </Button>
-              <Button color={red500} text="Restart" onClick={this.clear}
-                disabled={!this.recording && !this.complete}
-                >
-                <ContentClear/>
-              </Button>
-              <Button text="Download" onClick={this.save}
-                disabled={!this.expanded}
-                >
-                <FileFileDownload/>
-              </Button>
+              this.props.location.state.record ?
+                <Button text="Stop Recording" color={red500} onClick={this.toggle}>
+                  <AvMicOff/>
+                </Button> :
+                <Button text="Start Recording" color={cyan500} onClick={this.toggle}>
+                  <AvMic/>
+                </Button>
+            }
+            <Button text="Add Tag" color={cyan500} onClick={this.tag}
+              disabled={this.expanded || this.complete || !this.recording}
+            >
+              <ContentAdd/>
+            </Button>
+            <Button color={red500} text="Restart" onClick={this.clear}
+              disabled={!this.recording && !this.complete}
+            >
+              <ContentClear/>
+            </Button>
+            <Button text="Download" onClick={this.save}
+              disabled={!this.expanded}
+            >
+              <FileFileDownload/>
+            </Button>
             </CardActions>
             <CardMedia expandable={true}>
               <video controls style={{ backgroundColor: cyan500 }}
@@ -340,16 +345,11 @@ function Button(props) {
   //   disabled={this.expanded || this.complete || !this.recording}
   //   icon={<ContentAdd/>}
   // />)
-  const style = {
-    width: 96,
-    height: 96,
-    padding: 48,
-  };
   const iconStyle = {
     width: 48,
     height: 48,
     color: props.color || 'auto',
-  };
+  }
   return (<IconButton tooltip={props.text} iconStyle={iconStyle} style={{
     width: 96,
     height: 96,
@@ -363,30 +363,30 @@ function Toast({ children }) {
     open={!!children}
     message={children}
     autoHideDuration={4000}
-    />)
+  />)
 }
 
 function GitHubIcon(props) {
 
-  log('GitHubIcon', { props });
+  log('GitHubIcon', { props })
   return (<SvgIcon {...props}>{
     <path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/>
-  }</SvgIcon>);
+  }</SvgIcon>)
 }
 
 function Header({ title, href, showMenuIconButton, style }) {
 
-  log('Header', { title, href, showMenuIconButton, style });
+  log('Header', { title, href, showMenuIconButton, style })
   return (<AppBar title={title} style={style}
     showMenuIconButton={showMenuIconButton}
     iconElementRight={<IconButton href={href}><GitHubIcon/></IconButton>}
-  />);
+  />)
 }
 
 function cue(tags) {
   return track => {
 
-    log('cue', { tags }, { track });
+    log('cue', { tags }, { track })
     return (<track
       key={track.label}
       {...track}
@@ -398,7 +398,7 @@ function cue(tags) {
 function getTrackBlob(tags) {
   return transcript => {
 
-    log('getTrackBlob', { tags }, { transcript });
+    log('getTrackBlob', { tags }, { transcript })
     return new Blob([createVTT(tags.map((time, index) => ({
       time, text: transcript[index]
     })))], { type: 'text/vtt' })
@@ -407,16 +407,16 @@ function getTrackBlob(tags) {
 
 function createVTT(tags) {
 
-  log('createVTT', { tags });
+  log('createVTT', { tags })
   return dedent`WEBVTT
 
     ${tags.map(toCue).join('\n\n')}
-  `;
+  `
 }
 
 function toCue ({ time, text, side = 500 }) {
 
-  log('toCue', { time, text, side });
+  log('toCue', { time, text, side })
   return dedent`
     ${format(time - side)} --> ${format(time + side)}
     ${text}
@@ -425,7 +425,7 @@ function toCue ({ time, text, side = 500 }) {
 
 function format(unix) {
 
-  log('format', { unix });
-  let seconds = (~~(unix/1000)).toString().slice(-2).padStart(2, 0);
-  return `00:${seconds}.${unix % 1000}`;
+  log('format', { unix })
+  let seconds = (~~(unix/1000)).toString().slice(-2).padStart(2, 0)
+  return `00:${seconds}.${unix % 1000}`
 }
