@@ -1,7 +1,7 @@
 {
   "name": "speech-tagger",
   "homepage": "http://ryanwhite04.github.io/speech-tagger",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "private": true,
   "dependencies": {
     "debug": "^3.1.0",
