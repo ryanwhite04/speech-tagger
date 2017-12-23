@@ -23,6 +23,7 @@ import FloatingActionButton from 'material-ui/FloatingActionButton'
 import FileFileDownload from 'material-ui/svg-icons/file/file-download'
 import ContentClear from 'material-ui/svg-icons/content/clear'
 import ContentAdd from 'material-ui/svg-icons/content/add'
+import ActionHelp from 'material-ui/svg-icons/action/help'
 import AvMic from 'material-ui/svg-icons/av/mic'
 import AvMicOff from 'material-ui/svg-icons/av/mic-off'
 import ImageNavigateBefore from 'material-ui/svg-icons/image/navigate-before'
@@ -34,6 +35,9 @@ import { Card,
   CardTitle,
   CardText
 } from 'material-ui/Card'
+
+import Guide from './Guide'
+import config from './config'
 
 const log = debug('main')
 
@@ -77,6 +81,39 @@ const messages = {
   }
 }
 
+const steps = [
+  {
+    label: 'Start Recording',
+    content: (<p>Click the {<AvMic/>} button or press the <b>Spacebar</b> key.</p>),
+  },
+  {
+    label: 'Tag a Syllable',
+    content: (<p>Click the {<ContentAdd/>} button or press the <b>Enter</b> key <i><b>as</b> you pronounce the first syllable</i>.</p>),
+  },
+  {
+    label: 'Tag the remaining Syllables',
+    content: (<p>Click the {<ContentAdd/>} button or press the <b>Enter</b> key <i><b>as</b> you pronounce each remaining syllable</i>.</p>),
+  },
+  {
+    label: 'Stop Recording',
+    content: (<p>Click the {<AvMicOff/>} button or press the <b>Spacebar</b> key.</p>),
+  },
+  {
+    label: 'Download Files',
+    content: (<p>
+      Click the {<FileFileDownload/>} button or press the <b>Enter</b> key.
+      Two files should be downloaded for each recording, a .webm file and a .json file.
+      Otherwise, go
+      <a href={`chrome://settings/content/siteDetails?site=${config.PUBLIC_URL}#automaticDownoads`}>here</a>
+      to enable Automatic Downloads in chrome.
+    </p>),
+  },
+  {
+    label: 'Move to next Sentence',
+    content: (<p>Click the {<ImageNavigateNext/>} button or press the <b>Right Arrow</b> key.</p>),
+  },
+]
+
 export default class App extends Component {
 
   log = debug('App');
@@ -97,7 +134,7 @@ export default class App extends Component {
     } else {
       e.returnValue = false
     }
-    log('search', this.search)
+    this.log('search', this.search)
     // this.props.location.state.record && !this.complete ?
     // this.tag() :
     this.toggle()
@@ -248,9 +285,35 @@ export default class App extends Component {
   }
   get expanded() {
     return !this.props.location.state.record && this.complete
-  }fjs
+  }
   render = () => {
     this.log('render', this.props)
+    const {
+      transcript,
+      prev, next,
+      save,
+      expanded,
+      recording,
+      complete,
+      tag, clear, toggle, onStop, replace,
+      props: {
+        match: {
+          params: {
+            sentence
+          }
+        },
+        location: {
+          state: {
+            help = false,
+            step = 0,
+            tags = [],
+            record = false,
+            blob,
+            message,
+          }
+        }
+      }
+    } = this
     return (<MuiThemeProvider muiTheme={theme}>
       <div>
         <Header
@@ -259,81 +322,90 @@ export default class App extends Component {
           href="https://github.com/ryanwhite04/speech-tagger"
           style={{ position: 'fixed', top: 0 }}
         />
+        <Guide open={help} step={step} {...{
+          setStep: (step, count) => () => step < count && replace({ step }),
+          close: () => replace({ help: false }),
+        }} steps={steps}
+        />
         <Paper zDepth={2} style={{ maxWidth: 420, margin: '96px auto 64px auto' }}>
-          <Card expanded={this.expanded}>
+          <Card expanded={expanded}>
             <CardTitle
-              title={`Sentence ${this.props.match.params.sentence}`}
-              subtitle={`${this.props.location.state.tags.length}/${this.transcript[0].length}`}
-            />
+              title={`Sentence ${sentence}`}
+              subtitle={`${tags.length}/${transcript[0].length}`}
+            >
+              <FloatingActionButton className="Help" onClick={() => replace({ help: true })}>
+                <ActionHelp />
+              </FloatingActionButton>
+            </CardTitle>
             <CardMedia>
               <ReactMic
                 className="Mic"
                 strokeColor={cyan500}
-                record={this.props.location.state.record}
-                onStop={this.onStop}
+                record={record}
+                onStop={onStop}
               />
             </CardMedia>
             <CardHeader title="Hanzi" subtitle="For native chinese speakers"/>
             <CardText>
-              <span style={{ color: cyan500 }}>{this.transcript[0].slice(0, this.props.location.state.tags.length).join('')}</span>
-              <span>{this.transcript[0].slice(this.props.location.state.tags.length).join('')}</span>
+              <span style={{ color: cyan500 }}>{transcript[0].slice(0, tags.length).join('')}</span>
+              <span>{transcript[0].slice(tags.length).join('')}</span>
             </CardText>
             <CardHeader title="Pinyin" subtitle="For learners of mandarin"/>
             <CardText>
-              <span style={{ color: cyan500 }}>{this.transcript[1].slice(0, this.props.location.state.tags.length).join(' ')} </span>
-              <span>{this.transcript[1].slice(this.props.location.state.tags.length).join(' ')}</span>
+              <span style={{ color: cyan500 }}>{transcript[1].slice(0, tags.length).join(' ')} </span>
+              <span>{transcript[1].slice(tags.length).join(' ')}</span>
             </CardText>
             <CardActions>{
-              this.props.location.state.record ?
-                <Button text="Stop Recording" color={red500} onClick={this.toggle}>
+              record ?
+                <Button text="Stop Recording" color={red500} onClick={toggle}>
                   <AvMicOff/>
                 </Button> :
-                <Button text="Start Recording" color={cyan500} onClick={this.toggle}>
+                <Button text="Start Recording" color={cyan500} onClick={toggle}>
                   <AvMic/>
                 </Button>
             }
-            <Button text="Add Tag" color={cyan500} onClick={this.tag}
-              disabled={this.expanded || this.complete || !this.recording}
+            <Button text="Add Tag" color={cyan500} onClick={tag}
+              disabled={expanded || complete || !recording}
             >
               <ContentAdd/>
             </Button>
-            <Button color={red500} text="Restart" onClick={this.clear}
-              disabled={!this.recording && !this.complete}
+            <Button color={red500} text="Restart" onClick={clear}
+              disabled={!recording && !complete}
             >
               <ContentClear/>
             </Button>
-            <Button text="Download" onClick={this.save}
-              disabled={!this.expanded}
+            <Button text="Download" onClick={save}
+              disabled={!expanded}
             >
               <FileFileDownload/>
             </Button>
             </CardActions>
             <CardMedia expandable={true}>
               <video controls style={{ backgroundColor: cyan500 }}
-                src={this.props.location.state.blob ? URL.createObjectURL(this.props.location.state.blob) : undefined}>
-                {this.props.location.state.blob && [{
+                src={blob ? URL.createObjectURL(blob) : undefined}>
+                {blob && [{
                   default: true,
                   label: 'Hanzi',
-                  transcript: this.transcript[0],
+                  transcript: transcript[0],
                   type: 'text/vtt',
                   kind :'subtitles',
                 }, {
                   label: 'Pinyin',
-                  transcript: this.transcript[1],
+                  transcript: transcript[1],
                   type: 'text/vtt',
                   kind: 'subtitles',
-                }].map(cue(this.props.location.state.tags))}
+                }].map(cue(tags))}
               </video>
             </CardMedia>
           </Card>
         </Paper>
-        <FloatingActionButton className="Prev" onClick={this.prev}>
+        <FloatingActionButton className="Prev" onClick={prev}>
           <ImageNavigateBefore/>
         </FloatingActionButton>
-        <FloatingActionButton className="Next" onClick={this.next}>
+        <FloatingActionButton className="Next" onClick={next}>
           <ImageNavigateNext/>
         </FloatingActionButton>
-        <Toast>{this.props.location.state.message}</Toast>
+        <Toast>{message}</Toast>
       </div>
     </MuiThemeProvider>)
   }

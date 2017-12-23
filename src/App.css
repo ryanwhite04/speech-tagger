@@ -12,6 +12,12 @@
   margin: 0 !important;
   padding: 0 !important;
 }
+.Help {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 16px;
+}
 .Prev {
   position: fixed;
   bottom: 0;
@@ -43,11 +49,6 @@ video::-webkit-media-controls-volume-slider {
   background: #00BCD4;
 
 }
-
-video::-webkit-media-controls-fullscreen-button {
-    /*display: none !important;*/
-}
-
 video::-internal-media-controls-download-button {
   background: #00BCD4;
 }
