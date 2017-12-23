@@ -11,6 +11,7 @@ import {
   red500,
   // green500,
   cyan500,
+  green500,
 } from 'material-ui/styles/colors'
 import AppBar from 'material-ui/AppBar'
 import SnackBar from 'material-ui/Snackbar'
@@ -24,6 +25,7 @@ import FileFileDownload from 'material-ui/svg-icons/file/file-download'
 import ContentClear from 'material-ui/svg-icons/content/clear'
 import ContentAdd from 'material-ui/svg-icons/content/add'
 import ActionHelp from 'material-ui/svg-icons/action/help'
+import ActionLock from 'material-ui/svg-icons/action/lock'
 import AvMic from 'material-ui/svg-icons/av/mic'
 import AvMicOff from 'material-ui/svg-icons/av/mic-off'
 import ImageNavigateBefore from 'material-ui/svg-icons/image/navigate-before'
@@ -35,9 +37,7 @@ import { Card,
   CardTitle,
   CardText
 } from 'material-ui/Card'
-
 import Guide from './Guide'
-import config from './config'
 
 const log = debug('main')
 
@@ -103,9 +103,8 @@ const steps = [
     content: (<p>
       Click the {<FileFileDownload/>} button or press the <b>Enter</b> key.
       Two files should be downloaded for each recording, a .webm file and a .json file.
-      Otherwise, go
-      <a href={`chrome://settings/content/siteDetails?site=${config.PUBLIC_URL}#automaticDownoads`}>here</a>
-      to enable Automatic Downloads in chrome.
+      If not, go to site setting by clicking on the <ActionLock color={green500}/> to the left of the URL.
+      In the menu, change the <b><i>Automatic Downloads</i></b> optino to <b><i>Allow</i></b>.
     </p>),
   },
   {
@@ -116,7 +115,7 @@ const steps = [
 
 export default class App extends Component {
 
-  log = debug('App');
+  log = debug('App')
   
   bindings = [
     ['space', e => this.onSpace(e)],
@@ -125,6 +124,7 @@ export default class App extends Component {
     ['left', e => this.onLeft(e)],
     ['right', e => this.onRight(e)],
   ]
+
   componentDidMount = () => this.bindings.map(binding => Mousetrap.bind(...binding))
   componentWillUnmount = () => this.bindings.map(binding => Mousetrap.unBind(...binding))
   onSpace = e => {

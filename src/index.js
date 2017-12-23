@@ -22,7 +22,7 @@ ReactDOM.render(<Router basename={config.PUBLIC_URL}>
     }}/>
     <Route path="/:sentence" render={props => (
       props.location.state && props.match.params.sentence ?
-        (<App {...props} transcripts={transcripts}/>) :
+        (<App version={config.version} {...props} transcripts={transcripts}/>) :
         (<Redirect to={{...props.location, state}}/>)
     )}/>
   </Switch>
