@@ -1,4 +1,0 @@
-- randomize sentence order
-- save finished sentences in localStorage
-- add spacebarshortcut for all actions
-- use object to store recordings rather than key

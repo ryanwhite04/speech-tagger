@@ -34,5 +34,10 @@
     "babel-eslint": "^8.0.3",
     "eslint": "^4.13.1",
     "eslint-plugin-react": "^7.5.1"
-  }
+  },
+  "description": "For recording samples of speech audio data",
+  "main": "index.js",
+  "repository": "https://github.com/ryanwhite04/speech-tagger.git",
+  "author": "Ryan White <ryanwhite04@gmail.com>",
+  "license": "UNLICENSED"
 }
