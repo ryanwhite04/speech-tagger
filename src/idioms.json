@@ -1,0 +1,2502 @@
+[
+  {
+    "chinese": "好马不吃回头草",
+    "pinyin": "hǎo mǎ bù chī huítóu cǎo",
+    "english": "Good Never look back"
+  },
+  {
+    "chinese": "小菜一碟",
+    "pinyin": "xiǎocài yī dié",
+    "english": "Piece of cake"
+  },
+  {
+    "chinese": "太阳从西边出来",
+    "pinyin": "tàiyáng cóng xībian chūlái",
+    "english": "Sun from the west"
+  },
+  {
+    "chinese": "说曹操，曹操到",
+    "pinyin": "shuō cáocāo, cáocāo dào",
+    "english": "Said the devil to"
+  },
+  {
+    "chinese": "乌鸦嘴",
+    "pinyin": "wūyā zuǐ",
+    "english": "Big mouth"
+  },
+  {
+    "chinese": "二百五",
+    "pinyin": "èrbǎiwǔ",
+    "english": "Two hundred fifty"
+  },
+  {
+    "chinese": "吃一堑，长一智",
+    "pinyin": "chī yī qiàn, zhǎng yī zhì",
+    "english": "learn from mistakes"
+  },
+  {
+    "chinese": "睁着眼睛说瞎话",
+    "pinyin": "zhēng zhuó yǎnjīng shuō xiāhuà",
+    "english": "The lie"
+  },
+  {
+    "chinese": "近朱者赤，近墨者黑",
+    "pinyin": "jìn zhū zhě chì, jìn mò zhě hēi",
+    "english": "She knows nothing, doubts nothing"
+  },
+  {
+    "chinese": "物以稀为贵",
+    "pinyin": "wù yǐ xī wéi guì",
+    "english": "Suddenly"
+  },
+  {
+    "chinese": "王婆卖瓜，自卖自夸",
+    "pinyin": "wáng pó mài guā, zìmàizìkuā",
+    "english": "self boasting"
+  },
+  {
+    "chinese": "站着说话不腰疼",
+    "pinyin": "zhànzhe shuōhuà bù yāoténg",
+    "english": "Easier said than done"
+  },
+  {
+    "chinese": "天下没有不散的筵席",
+    "pinyin": "tiānxià méiyǒu bú sàn de yánxí",
+    "english": "There is no never-ending feast"
+  },
+  {
+    "chinese": "天上掉馅饼",
+    "pinyin": "tiānshàngdiào xiàn bǐng",
+    "english": "Beautiful day"
+  },
+  {
+    "chinese": "己所不欲，勿施于人",
+    "pinyin": "jǐ suǒ bù yù, wù shī yú rén",
+    "english": "Do unto others, do not impose on others"
+  },
+  {
+    "chinese": "睁眼瞎",
+    "pinyin": "zhēng yǎn xiā",
+    "english": "Illiterate"
+  },
+  {
+    "chinese": "跳进黄河洗不清",
+    "pinyin": "tiào jìn huánghé xǐ bù qīng",
+    "english": "Jumped into the Yellow River Xibu Qing"
+  },
+  {
+    "chinese": "拍马屁",
+    "pinyin": "pāimǎpì",
+    "english": "Bootlick"
+  },
+  {
+    "chinese": "情人眼里出西施",
+    "pinyin": "qíngrén yǎn lǐ chū xīshī",
+    "english": "Beauty is in the eyes of beholder"
+  },
+  {
+    "chinese": "打酱油",
+    "pinyin": "dǎ jiàngyóu",
+    "english": "Soy sauce"
+  },
+  {
+    "chinese": "不怕一万，就怕万一",
+    "pinyin": "bùpà yī wàn, jiù pà wàn yī",
+    "english": "Afraid of ten thousand, afraid of the event"
+  },
+  {
+    "chinese": "走着瞧",
+    "pinyin": "zǒuzhe qiáo",
+    "english": "Wait and see"
+  },
+  {
+    "chinese": "不管三七二十一",
+    "pinyin": "bùguǎn sānqī'èrshíyī",
+    "english": "No matter whether it is 2721"
+  },
+  {
+    "chinese": "吃着碗里的，看着锅里的",
+    "pinyin": "chīzhe wǎn lǐ de, kànzhe guō lǐ de",
+    "english": "Eating a bowl, watching the pot"
+  },
+  {
+    "chinese": "钻牛角尖",
+    "pinyin": "zuānniújiǎojiān",
+    "english": "Dead end"
+  },
+  {
+    "chinese": "人不可貌相，海水不可斗量",
+    "pinyin": "rén bùkě màoxiàng, hǎishuǐ bùkě dǒu liàng",
+    "english": "do not judge a book by it's cover"
+  },
+  {
+    "chinese": "林子大了，什么鸟都有",
+    "pinyin": "línzi dàle, shénme niǎo dōu yǒu",
+    "english": "Big woods, what birds are"
+  },
+  {
+    "chinese": "鸡毛蒜皮",
+    "pinyin": "jīmáosuànpí",
+    "english": "Trivia"
+  },
+  {
+    "chinese": "鲜花插在牛粪上",
+    "pinyin": "xiānhuā chā zài niú fèn shàng",
+    "english": "Flowers inserted in cow dung"
+  },
+  {
+    "chinese": "醉翁之意不在酒",
+    "pinyin": "zuì wēng zhī yì bùzài jiǔ",
+    "english": "Ulterior motives"
+  },
+  {
+    "chinese": "猴年马月",
+    "pinyin": "hóuniánmǎyuè",
+    "english": "These years"
+  },
+  {
+    "chinese": "眼不见为净",
+    "pinyin": "yǎn bùjiàn wéi jìng",
+    "english": "Sight of the net"
+  },
+  {
+    "chinese": "姜是老的辣",
+    "pinyin": "jiāng shì lǎo de là",
+    "english": "Ginger is the old lady"
+  },
+  {
+    "chinese": "留得青山在，不怕没柴烧",
+    "pinyin": "liú dé qīngshān zài, bùpà méi chái shāo",
+    "english": "Where there is life, there is hope"
+  },
+  {
+    "chinese": "拿得起，放得下",
+    "pinyin": "ná dé qǐ, fàng dé xià",
+    "english": "Get affordable, fit"
+  },
+  {
+    "chinese": "以其人之道还治其人之身",
+    "pinyin": "yǐ qí rén zhī dào huán zhì qí rén zhī shēn",
+    "english": "Eye for an eye person in his body"
+  },
+  {
+    "chinese": "走桃花运",
+    "pinyin": "zǒu táohuāyùn",
+    "english": "Go peach blossom"
+  },
+  {
+    "chinese": "成事不足，败事有余",
+    "pinyin": "chéngshì bùzú, bài shì yǒuyú",
+    "english": "Incompetent bungler"
+  },
+  {
+    "chinese": "皇上不急太监急",
+    "pinyin": "huángshàng bù jí tàijiàn jí",
+    "english": "The emperor is not urgent eunuch urgent"
+  },
+  {
+    "chinese": "三个臭皮匠，顶个诸葛亮",
+    "pinyin": "sān gè chòu píjiàng, dǐng gè zhūgéliàng",
+    "english": "Three Stooges, the top one Zhuge Liang"
+  },
+  {
+    "chinese": "脚踩两只船",
+    "pinyin": "jiǎo cǎi liǎng zhī chuán",
+    "english": "It both ways"
+  },
+  {
+    "chinese": "此地无银三百两",
+    "pinyin": "cǐdì wú yín sānbǎi liǎng",
+    "english": "Admitting their guilt"
+  },
+  {
+    "chinese": "吃不到葡萄就说葡萄酸",
+    "pinyin": "chī bù dào pútáo jiù shuō pútáo suān",
+    "english": "Not eat sour grapes"
+  },
+  {
+    "chinese": "心急吃不了热豆腐",
+    "pinyin": "xīnjí chī bùliǎo rè dòufu",
+    "english": "More haste less speed"
+  },
+  {
+    "chinese": "家常便饭",
+    "pinyin": "Jiāchángbiànfàn",
+    "english": "Common Meal"
+  },
+  {
+    "chinese": "癞蛤蟆想吃天鹅肉",
+    "pinyin": "làihámá xiǎng chī tiān'é ròu",
+    "english": "Toad wants to eat"
+  },
+  {
+    "chinese": "天无绝人之路",
+    "pinyin": "tiān wú jué rén zhī lù",
+    "english": "There is always a way out"
+  },
+  {
+    "chinese": "走后门",
+    "pinyin": "zǒuhòumén",
+    "english": "Through the back door"
+  },
+  {
+    "chinese": "瞎猫碰上死耗子",
+    "pinyin": "xiā māo pèng shàng sǐ hàozi",
+    "english": "Blind cat run into dead rat"
+  },
+  {
+    "chinese": "好汉不吃眼前亏",
+    "pinyin": "hǎohàn bù chī yǎnqiánkuī",
+    "english": "Heroes do not eat immediate loss"
+  },
+  {
+    "chinese": "解铃还须系铃人",
+    "pinyin": "jiě líng hái xū xì líng rén",
+    "english": "The trouble should end it"
+  },
+  {
+    "chinese": "肥水不流外人田",
+    "pinyin": "féishuǐ bù liú wàirén tián",
+    "english": "Charity begins at Tian"
+  },
+  {
+    "chinese": "心有余而力不足",
+    "pinyin": "xīn yǒuyú ér lì bùzú",
+    "english": "Beyond their grasp"
+  },
+  {
+    "chinese": "不分青红皂白",
+    "pinyin": "bù fēn qīnghóngzàobái",
+    "english": "without understanding"
+  },
+  {
+    "chinese": "睁一只眼，闭一只眼",
+    "pinyin": "zhēng yī zhī yǎn, bì yī zhī yǎn",
+    "english": "An eye, close one eye"
+  },
+  {
+    "chinese": "破罐子破摔",
+    "pinyin": "pò guànzi pò shuāi",
+    "english": "Breaking the jar"
+  },
+  {
+    "chinese": "种瓜得瓜，种豆得豆",
+    "pinyin": "zhǒng guā dé guā, zhǒng dòu dé dòu",
+    "english": "you get what you sow"
+  },
+  {
+    "chinese": "萝卜白菜，各有所爱",
+    "pinyin": "luóbo báicài, gè yǒu suǒ ài",
+    "english": "one's man meat is another man's poison"
+  },
+  {
+    "chinese": "狗嘴里吐不出象牙",
+    "pinyin": "gǒu zuǐ lǐ tǔ bu chū xiàngyá",
+    "english": "Dogs bark"
+  },
+  {
+    "chinese": "三天打鱼，两天晒网",
+    "pinyin": "sān tiān dǎ yú, liǎng tiān shài wǎng",
+    "english": "Three days fishing, two days of drying"
+  },
+  {
+    "chinese": "一朝被蛇咬，十年怕井绳",
+    "pinyin": "yī zhāo bèi shé yǎo, shí nián pà jǐng shéng",
+    "english": "Once bitten, twice shy"
+  },
+  {
+    "chinese": "英雄难过美人关",
+    "pinyin": "yīngxióng nánguò měirén guān",
+    "english": "Hero becomes a prisoner"
+  },
+  {
+    "chinese": "刀子嘴，豆腐心",
+    "pinyin": "dāozizuǐ, dòufu xīn",
+    "english": "Sharp tongue, a soft heart"
+  },
+  {
+    "chinese": "一失足成千古恨",
+    "pinyin": "yī shīzú chéng qiāngǔ hèn",
+    "english": "Without fire"
+  },
+  {
+    "chinese": "哪壶不开提哪壶",
+    "pinyin": "nǎ hú bù kāi tí nǎ hú",
+    "english": "Tender the tender spot"
+  },
+  {
+    "chinese": "炒鱿鱼",
+    "pinyin": "chǎoyóuyú",
+    "english": "Fired"
+  },
+  {
+    "chinese": "人往高处走，水往低处流",
+    "pinyin": "rén wǎng gāo chù zǒu, shuǐ wǎng dī chù liú",
+    "english": "Water flows to lower place, man goes to higher position"
+  },
+  {
+    "chinese": "说得比唱得好听",
+    "pinyin": "shuō dé bǐ chàng dé hǎotīng",
+    "english": "He said than sing nicely"
+  },
+  {
+    "chinese": "强扭的瓜不甜",
+    "pinyin": "qiáng niǔ de guā bù tián",
+    "english": "A horse is not sweet"
+  },
+  {
+    "chinese": "老掉牙",
+    "pinyin": "lǎodiàoyá",
+    "english": "Old-fashioned"
+  },
+  {
+    "chinese": "搬起石头砸自己的脚",
+    "pinyin": "bān qǐ shítou zá zìjǐ de jiǎo",
+    "english": "Shooting itself in the foot"
+  },
+  {
+    "chinese": "卖关子",
+    "pinyin": "màiguānzi",
+    "english": "Guessing"
+  },
+  {
+    "chinese": "一分钱一分货",
+    "pinyin": "yī fēn qián yī fēn huò",
+    "english": "you get what you pay for"
+  },
+  {
+    "chinese": "九牛二虎之力",
+    "pinyin": "jiǔ niú èr hǔ zhī lì",
+    "english": "To great lengths"
+  },
+  {
+    "chinese": "敬酒不吃吃罚酒",
+    "pinyin": "jìngjiǔ bù chī chī fá jiǔ",
+    "english": "Toast Monastic"
+  },
+  {
+    "chinese": "躲得过初一，躲不过十五",
+    "pinyin": "duǒ déguò chū yī, duǒ bùguò shíwǔ",
+    "english": "Avoid them the first day, become obvious to fifteen"
+  },
+  {
+    "chinese": "吃香的，喝辣的",
+    "pinyin": "chīxiāng de, hē là de",
+    "english": "Popular to drink hot,"
+  },
+  {
+    "chinese": "小儿科",
+    "pinyin": "xiǎo'érkē",
+    "english": "Pediatrics"
+  },
+  {
+    "chinese": "一个巴掌拍不响",
+    "pinyin": "yīgè bāzhang pāi bù xiǎng",
+    "english": "A tango"
+  },
+  {
+    "chinese": "牛头不对马嘴",
+    "pinyin": "niútóu bùduì mǎ zuǐ",
+    "english": "Incongruous"
+  },
+  {
+    "chinese": "以小人之心，度君子之腹",
+    "pinyin": "yǐ xiǎo rén zhī xīn, dù jūnzǐ zhī fù",
+    "english": "Belly sinister heart of a gentleman"
+  },
+  {
+    "chinese": "车到山前必有路",
+    "pinyin": "chē dào shān qián bì yǒu lù",
+    "english": "Car to Piedmont Road"
+  },
+  {
+    "chinese": "鸡蛋里挑骨头",
+    "pinyin": "jīdàn li tiāo gú tóu",
+    "english": "Nitpick"
+  },
+  {
+    "chinese": "吃不了兜着走",
+    "pinyin": "chī bùliǎo dōuzhe zǒu",
+    "english": "Steal sheep"
+  },
+  {
+    "chinese": "打肿脸充胖子",
+    "pinyin": "dǎ zhǒng liǎn chōng pàngzi",
+    "english": "Hat and no cattle"
+  },
+  {
+    "chinese": "三十六计走为上",
+    "pinyin": "sānshíliù jì zǒu wéi shàng",
+    "english": "Thirty-Six to go on"
+  },
+  {
+    "chinese": "当耳旁风",
+    "pinyin": "dàng ěrpángfēng",
+    "english": "When heeded"
+  },
+  {
+    "chinese": "恨铁不成钢",
+    "pinyin": "hèn tiě bùchéng gāng",
+    "english": "Turn iron into steel"
+  },
+  {
+    "chinese": "你走你的阳关道，我过我的独木桥",
+    "pinyin": "nǐ zǒu nǐ de yángguāndào, wǒguò wǒ de dú mù qiáo",
+    "english": "You go your way and I to my single-plank bridge"
+  },
+  {
+    "chinese": "过了这个村，就没这个店",
+    "pinyin": "guò le zhège cūn, jiù méi zhège diàn",
+    "english": "After this village, no this shop"
+  },
+  {
+    "chinese": "抱佛脚",
+    "pinyin": "bàofójiǎo",
+    "english": "Cramming"
+  },
+  {
+    "chinese": "有钱能使鬼推磨",
+    "pinyin": "yǒu qián néng shǐ guǐ tuī mó",
+    "english": "Money talks"
+  },
+  {
+    "chinese": "有其父必有其子",
+    "pinyin": "yǒu qí fù bì yǒu qí zi",
+    "english": "Like father like son"
+  },
+  {
+    "chinese": "不见棺材不落泪",
+    "pinyin": "bùjiàn guāncai bù luò lèi",
+    "english": "Does it cry"
+  },
+  {
+    "chinese": "三长两短",
+    "pinyin": "sānchángliǎngduǎn",
+    "english": "If something happens"
+  },
+  {
+    "chinese": "纸包不住火",
+    "pinyin": "zhǐ bāo bù zhù huǒ",
+    "english": "Murder"
+  },
+  {
+    "chinese": "好戏在后头",
+    "pinyin": "hǎo xì zài hòutou",
+    "english": "Good in the first"
+  },
+  {
+    "chinese": "吹牛皮",
+    "pinyin": "chuī niúpí",
+    "english": "Boast"
+  },
+  {
+    "chinese": "欲速则不达",
+    "pinyin": "yù sù zé bù dá",
+    "english": "Haste makes waste"
+  },
+  {
+    "chinese": "家家有本难念的经",
+    "pinyin": "jiā jiā yǒu běn nán niàn de jīng",
+    "english": "Every family has its cupboard"
+  },
+  {
+    "chinese": "墙头草",
+    "pinyin": "qiángtóu cǎo",
+    "english": "Fence"
+  },
+  {
+    "chinese": "替罪羊",
+    "pinyin": "tìzuìyáng",
+    "english": "scapegoat"
+  },
+  {
+    "chinese": "近水楼台先得月",
+    "pinyin": "jìnshuǐlóutái xiān dé yuè",
+    "english": "Tun"
+  },
+  {
+    "chinese": "小巫见大巫",
+    "pinyin": "xiǎowū jiàn dàwū",
+    "english": "Pale into insignificance"
+  },
+  {
+    "chinese": "过河拆桥",
+    "pinyin": "guòhéchāiqiáo",
+    "english": "Burning bridges"
+  },
+  {
+    "chinese": "一不做，二不休",
+    "pinyin": "yībù zuò, èr bùxiū",
+    "english": "In for a penny, in for a pound"
+  },
+  {
+    "chinese": "以牙还牙，以眼还眼",
+    "pinyin": "yǐyáháiyá, yǐ yǎn hái yǎn",
+    "english": "Tooth for a tooth, an eye for an eye"
+  },
+  {
+    "chinese": "跑了和尚跑不了庙",
+    "pinyin": "pǎole héshàng pǎo bùliǎo miào",
+    "english": "He ran the temple monks stand"
+  },
+  {
+    "chinese": "绿帽子",
+    "pinyin": "lǜmàozi",
+    "english": "Green Hat"
+  },
+  {
+    "chinese": "识时务者为俊杰",
+    "pinyin": "shí shíwù zhě wéi jùnjié",
+    "english": "Servers are clever"
+  },
+  {
+    "chinese": "井水不犯河水",
+    "pinyin": "jǐng shuǐ bùfàn héshuǐ",
+    "english": "Well water does not commit river water"
+  },
+  {
+    "chinese": "一棵树上吊死",
+    "pinyin": "yī kē shù shàng diào sǐ",
+    "english": "Hang in a tree"
+  },
+  {
+    "chinese": "放鸽子",
+    "pinyin": "fàng gēzi",
+    "english": "Bouncing"
+  },
+  {
+    "chinese": "一步一个脚印",
+    "pinyin": "yī bù yīgè jiǎoyìn",
+    "english": "Step by step"
+  },
+  {
+    "chinese": "上梁不正下梁歪",
+    "pinyin": "shàng liáng bùzhèng xià liáng wāi",
+    "english": "The beam is not right under the beam"
+  },
+  {
+    "chinese": "不入虎穴，焉得虎子",
+    "pinyin": "bù rù hǔxué, yān dé hǔ zi",
+    "english": "Nothing ventured, nothing gained"
+  },
+  {
+    "chinese": "赔了夫人又折兵",
+    "pinyin": "péile fūrén yòu zhé bīng",
+    "english": "Throw good money after bad"
+  },
+  {
+    "chinese": "有心栽花花不长，无心插柳柳成荫",
+    "pinyin": "yǒuxīn zāi huāhuā bu zhǎng, wúxīn chā liǔ liǔchéngyīn",
+    "english": "Determined to grow flowers do not grow, unintentional positive outcomes"
+  },
+  {
+    "chinese": "八字还没一撇",
+    "pinyin": "bāzì hái méi yī piē",
+    "english": "Character not even got off"
+  },
+  {
+    "chinese": "有眼不识泰山",
+    "pinyin": "yǒu yǎn bù shí tàishān",
+    "english": "There did not know"
+  },
+  {
+    "chinese": "出气筒",
+    "pinyin": "chūqìtǒng",
+    "english": "Punching bag"
+  },
+  {
+    "chinese": "八九不离十",
+    "pinyin": "bājiǔ bùlí shí",
+    "english": "pretty close"
+  },
+  {
+    "chinese": "无风不起浪",
+    "pinyin": "wúfēngbùqǐlàng",
+    "english": "No wind, no wave"
+  },
+  {
+    "chinese": "得便宜卖乖",
+    "pinyin": "dé piányí màiguāi",
+    "english": "Too cheap cold"
+  },
+  {
+    "chinese": "不是省油的灯",
+    "pinyin": "bùshì shěngyóu de dēng",
+    "english": "Not out of trouble"
+  },
+  {
+    "chinese": "家丑不可外扬",
+    "pinyin": "jiāchǒu bùkě wàiyáng",
+    "english": "Not wash your dirty linen in public"
+  },
+  {
+    "chinese": "背黑锅",
+    "pinyin": "bēihēiguō",
+    "english": "Be a scapegoat"
+  },
+  {
+    "chinese": "兔子不吃窝边草",
+    "pinyin": "tùzǐ bù chī wō biān cǎo",
+    "english": "Rabbit does not eat the grass edge"
+  },
+  {
+    "chinese": "铁饭碗",
+    "pinyin": "tiě fànwǎn",
+    "english": "iron rice bowl"
+  },
+  {
+    "chinese": "冰冻三尺，非一日之寒",
+    "pinyin": "bīngdòng sān chǐ, fēi yī rì zhī hán",
+    "english": "Rome was not built in a day"
+  },
+  {
+    "chinese": "远亲不如近邻",
+    "pinyin": "yuǎnqīn bùrú jìnlín",
+    "english": "Neighbor is better than distant relatives"
+  },
+  {
+    "chinese": "下马威",
+    "pinyin": "xiàmǎwēi",
+    "english": "Blow"
+  },
+  {
+    "chinese": "天下乌鸦一般黑",
+    "pinyin": "tiānxià wūyā yībān hēi",
+    "english": "The world crows are generally black"
+  },
+  {
+    "chinese": "不到黄河心不死",
+    "pinyin": "bù dào huánghéxīn bùsǐ",
+    "english": "Refuse to give up until all hope is gone"
+  },
+  {
+    "chinese": "狗急了跳墙",
+    "pinyin": "gǒu jíle tiào qiáng",
+    "english": "Gouji jump off the wall"
+  },
+  {
+    "chinese": "狗眼看人低",
+    "pinyin": "gǒu yǎnkàn rén dī",
+    "english": "Snob"
+  },
+  {
+    "chinese": "只许州官放火，不许百姓点灯",
+    "pinyin": "zhǐ xǔ zhōu guān fànghuǒ, bùxǔ bǎixìng diǎndēng",
+    "english": "oppressive rule"
+  },
+  {
+    "chinese": "偷鸡摸狗",
+    "pinyin": "tōujīmōgǒu",
+    "english": "Sly"
+  },
+  {
+    "chinese": "死马当活马医",
+    "pinyin": "sǐ mǎ dāng huó mǎ yī",
+    "english": "Dead horse a living horse medicine"
+  },
+  {
+    "chinese": "新官上任三把火",
+    "pinyin": "xīn guān shàngrèn sān bǎ huǒ",
+    "english": "New broom sweeps clean"
+  },
+  {
+    "chinese": "对号入座",
+    "pinyin": "duìhàorùzuò",
+    "english": "Condemnation"
+  },
+  {
+    "chinese": "十万八千里",
+    "pinyin": "shí wàn bāqiān lǐ",
+    "english": "Galaxy"
+  },
+  {
+    "chinese": "露马脚",
+    "pinyin": "lòumǎjiǎo",
+    "english": "Cloven hoof"
+  },
+  {
+    "chinese": "公说公有理，婆说婆有理",
+    "pinyin": "gōng shuō gōng yǒulǐ, pó shuō pó yǒulǐ",
+    "english": "Public that goes, rational woman and she said"
+  },
+  {
+    "chinese": "上刀山，下火海",
+    "pinyin": "shàng dāo shān, xià huǒhǎi",
+    "english": "On ordered by the flames"
+  },
+  {
+    "chinese": "打退堂鼓",
+    "pinyin": "dǎtuìtánggǔ",
+    "english": "Back down"
+  },
+  {
+    "chinese": "磨刀不误砍柴工",
+    "pinyin": "mó dāo bù wù kǎn chái gōng",
+    "english": "Preparation may quicken the work"
+  },
+  {
+    "chinese": "风马牛不相及",
+    "pinyin": "fēng mǎ niú bù xiāng jí",
+    "english": "Irrelevant"
+  },
+  {
+    "chinese": "一山不容二虎",
+    "pinyin": "yīshānbùróng'èrhǔ",
+    "english": "Mountain can not be two tigers"
+  },
+  {
+    "chinese": "眼里揉不得沙子",
+    "pinyin": "yǎn lǐ róu bùdé shāzi",
+    "english": "Not rub the eyes of sand"
+  },
+  {
+    "chinese": "三下五除二",
+    "pinyin": "sān xià wǔ chú èr",
+    "english": "Neat and quick"
+  },
+  {
+    "chinese": "泼冷水",
+    "pinyin": "pōlěngshuǐ",
+    "english": "pour cold water on"
+  },
+  {
+    "chinese": "杀鸡给猴看",
+    "pinyin": "shā jī gěi hóu kàn",
+    "english": "A warning to others"
+  },
+  {
+    "chinese": "生米做成熟饭",
+    "pinyin": "shēng mǐ zuò chéngshú fàn",
+    "english": "Do mature rice uncooked rice"
+  },
+  {
+    "chinese": "初生牛犊不怕虎",
+    "pinyin": "chūshēng niúdú bùpà hǔ",
+    "english": "Fearless"
+  },
+  {
+    "chinese": "铁公鸡",
+    "pinyin": "tiěgōngjī",
+    "english": "stingy person"
+  },
+  {
+    "chinese": "无事不登三宝殿",
+    "pinyin": "wú shì bù dēng sān bǎodiàn",
+    "english": "bother you for something"
+  },
+  {
+    "chinese": "马后炮",
+    "pinyin": "mǎhòupào",
+    "english": "Belated effort"
+  },
+  {
+    "chinese": "掉链子",
+    "pinyin": "diào liànzi",
+    "english": "The ball dropped"
+  },
+  {
+    "chinese": "纸老虎",
+    "pinyin": "zhǐlǎohǔ",
+    "english": "Paper tiger"
+  },
+  {
+    "chinese": "狐狸精",
+    "pinyin": "húlíjīng",
+    "english": "Vixen"
+  },
+  {
+    "chinese": "丑话说在前头",
+    "pinyin": "chǒu huàshuō zài qiántou",
+    "english": "Ugly words at the head"
+  },
+  {
+    "chinese": "半路杀出个程咬金",
+    "pinyin": "bànlù shā chū gè chéng yǎo jīn",
+    "english": "Grab a Cheng Yaojin"
+  },
+  {
+    "chinese": "麻雀虽小，五脏俱全",
+    "pinyin": "máquè suī xiǎo, wǔzàng jùquán",
+    "english": "Small but complete"
+  },
+  {
+    "chinese": "虎毒不食子",
+    "pinyin": "hǔ dú bù shí zǐ",
+    "english": "Tiger poison does not eat"
+  },
+  {
+    "chinese": "小不忍则乱大谋",
+    "pinyin": "xiǎo bùrěn zé luàn dà móu",
+    "english": "A small leak will sink a great ship"
+  },
+  {
+    "chinese": "打狗还得看主人",
+    "pinyin": "dǎ gǒu hái dé kàn zhǔrén",
+    "english": "Dog owners will have to see"
+  },
+  {
+    "chinese": "万事俱备，只欠东风",
+    "pinyin": "wànshì jù bèi, zhǐ qiàn dōngfēng",
+    "english": "All is ready except for the opportunity"
+  },
+  {
+    "chinese": "不管黑猫白猫，会捉老鼠就是好猫",
+    "pinyin": "bùguǎn hēi māo bái māo, huì zhuō lǎoshǔ jiùshì hǎo māo",
+    "english": "Whether black or white, it catches mice is a good cat"
+  },
+  {
+    "chinese": "真金不怕火炼",
+    "pinyin": "zhēn jīn bùpà huǒ liàn",
+    "english": "True gold fears no fire"
+  },
+  {
+    "chinese": "狗改不了吃屎",
+    "pinyin": "gǒu gǎi bùliǎo chī shǐ",
+    "english": "Dogs eat shit"
+  },
+  {
+    "chinese": "杀手锏",
+    "pinyin": "shāshǒujiàn",
+    "english": "Killer"
+  },
+  {
+    "chinese": "饥不择食",
+    "pinyin": "jībùzéshí",
+    "english": "Beggars"
+  },
+  {
+    "chinese": "对事不对人",
+    "pinyin": "duì shì bùduì rén",
+    "english": "Not the person"
+  },
+  {
+    "chinese": "皮笑肉不笑",
+    "pinyin": "pí xiào ròu bùxiào",
+    "english": "He is tightlipped"
+  },
+  {
+    "chinese": "双刃剑",
+    "pinyin": "shuāng rèn jiàn",
+    "english": "Double-edged sword"
+  },
+  {
+    "chinese": "热脸贴冷屁股",
+    "pinyin": "rè liǎn tiē lěng pìgu",
+    "english": "Hot face to cold ass"
+  },
+  {
+    "chinese": "好了伤疤忘了疼",
+    "pinyin": "hǎole shāngbā wàngle téng",
+    "english": "Well, the pain is forgotten"
+  },
+  {
+    "chinese": "醋坛子",
+    "pinyin": "cùtánzi",
+    "english": "Jealous"
+  },
+  {
+    "chinese": "君子之交淡如水",
+    "pinyin": "jūnzǐ zhī jiāo dàn rúshuǐ",
+    "english": "Civil use"
+  },
+  {
+    "chinese": "三个和尚没水吃",
+    "pinyin": "sān gè héshàng méi shuǐ chī",
+    "english": "Three monks no water to drink"
+  },
+  {
+    "chinese": "赶鸭子上架",
+    "pinyin": "gǎn yāzi shàngjià",
+    "english": "Catch the duck on the shelf"
+  },
+  {
+    "chinese": "小白脸",
+    "pinyin": "xiǎobáiliǎn",
+    "english": "Bitch"
+  },
+  {
+    "chinese": "放长线，钓大鱼",
+    "pinyin": "fàng chángxiàn, diào dà yú",
+    "english": "Long line to catch a big fish"
+  },
+  {
+    "chinese": "依葫芦画瓢",
+    "pinyin": "yī húlu huà piáo",
+    "english": "Gourd painting"
+  },
+  {
+    "chinese": "隔墙有耳",
+    "pinyin": "géqiángyǒu'ěr",
+    "english": "Walls have ears"
+  },
+  {
+    "chinese": "巧妇难为无米之炊",
+    "pinyin": "qiǎo fù nánwéi wúmǐzhīchuī",
+    "english": "Make bricks without straw"
+  },
+  {
+    "chinese": "不是吃素的",
+    "pinyin": "bùshì chīsù de",
+    "english": "Not a vegetarian"
+  },
+  {
+    "chinese": "嫁鸡随鸡，嫁狗随狗",
+    "pinyin": "jià jī suí jī, jià gǒu suí gǒu",
+    "english": "Marry a chicken with the chicken, marry a dog as a dog"
+  },
+  {
+    "chinese": "打开天窗说亮话",
+    "pinyin": "dǎkāi tiānchuāng shuō liànghuà",
+    "english": "Open the skylight and speak brightly"
+  },
+  {
+    "chinese": "人算不如天算",
+    "pinyin": "rén suàn bùrú tiān suàn",
+    "english": "Unexpected outbreak"
+  },
+  {
+    "chinese": "小动作",
+    "pinyin": "xiǎodòngzuò",
+    "english": "Trick"
+  },
+  {
+    "chinese": "远水解不了近渴",
+    "pinyin": "yuǎn shuǐjiě bùliǎo jìn kě",
+    "english": "Far will not be forthcoming"
+  },
+  {
+    "chinese": "占着茅坑不拉屎",
+    "pinyin": "zhànzhe máokēng bù lā shǐ",
+    "english": "Dog in the manger"
+  },
+  {
+    "chinese": "碰一鼻子灰",
+    "pinyin": "pèng yī bízi huī",
+    "english": "be snubbed"
+  },
+  {
+    "chinese": "死猪不怕开水烫",
+    "pinyin": "sǐ zhū bùpà kāishuǐ tàng",
+    "english": "Dead pig afraid of water hot"
+  },
+  {
+    "chinese": "换汤不换药",
+    "pinyin": "huàn tāng bù huàn yào",
+    "english": "A new name"
+  },
+  {
+    "chinese": "救命稻草",
+    "pinyin": "jiùmìng dàocǎo",
+    "english": "Straw"
+  },
+  {
+    "chinese": "明枪易躲，暗箭难防",
+    "pinyin": "míng qiāng yì duǒ, ànjiàn nán fáng",
+    "english": "Easy to hide the gun, stab difficult to prevent"
+  },
+  {
+    "chinese": "谋事在人，成事在天",
+    "pinyin": "móushì zài rén, chéngshì zài tiān",
+    "english": "Man proposes, God disposes"
+  },
+  {
+    "chinese": "三个女人一台戏",
+    "pinyin": "sān gè nǚrén yī tái xì",
+    "english": "Three women in a drama"
+  },
+  {
+    "chinese": "有鼻子有眼",
+    "pinyin": "yǒubíziyǒuyǎn",
+    "english": "A nose with eyes"
+  },
+  {
+    "chinese": "枪打出头鸟",
+    "pinyin": "qiāng dǎchūtóu niǎo",
+    "english": "Good deed goes unpunished"
+  },
+  {
+    "chinese": "碰钉子",
+    "pinyin": "pèngdīngzi",
+    "english": "hit a snag"
+  },
+  {
+    "chinese": "蹬鼻子上脸",
+    "pinyin": "dēng bízi shàng liǎn",
+    "english": "Kicking his nose on the face"
+  },
+  {
+    "chinese": "吃豆腐",
+    "pinyin": "chī dòufu",
+    "english": "eat tofu"
+  },
+  {
+    "chinese": "眉毛胡子一把抓",
+    "pinyin": "méi mao húzi yībǎzhuā",
+    "english": "Eyebrows and beard grabbed"
+  },
+  {
+    "chinese": "偷鸡不成反蚀把米",
+    "pinyin": "tōu jī bùchéng fǎn shí bǎ mǐ",
+    "english": "Anti-eclipse the rice gained nothing"
+  },
+  {
+    "chinese": "众人拾柴火焰高",
+    "pinyin": "zhòngrén shí chái huǒyàn gāo",
+    "english": "The more the merrier"
+  },
+  {
+    "chinese": "快刀斩乱麻",
+    "pinyin": "kuàidāo zhǎn luànmá",
+    "english": "Cut the Gordian knot"
+  },
+  {
+    "chinese": "吃软饭",
+    "pinyin": "chī ruǎn fàn",
+    "english": "Eat soft food"
+  },
+  {
+    "chinese": "一着不慎，满盘皆输",
+    "pinyin": "yīzhe bù shèn, mǎn pán jiē shū",
+    "english": "One good turn deserves another"
+  },
+  {
+    "chinese": "听风就是雨",
+    "pinyin": "tīng fēng jiùshì yǔ",
+    "english": "Ting Feng is the rain"
+  },
+  {
+    "chinese": "鸿门宴",
+    "pinyin": "hóngményàn",
+    "english": "Banquet"
+  },
+  {
+    "chinese": "吃哑巴亏",
+    "pinyin": "chī yǎbākuī",
+    "english": "Loss of food"
+  },
+  {
+    "chinese": "眼中钉、肉中刺",
+    "pinyin": "yǎnzhōngdīng, ròuzhōngcì",
+    "english": "Thorn in the flesh"
+  },
+  {
+    "chinese": "舍不得孩子套不住狼",
+    "pinyin": "shěbudé háizi tào bù zhù láng",
+    "english": "Could not bear a child sets the wolf"
+  },
+  {
+    "chinese": "挂羊头、卖狗肉",
+    "pinyin": "guà yáng tóu, mài gǒuròu",
+    "english": "Trickery"
+  },
+  {
+    "chinese": "煮熟的鸭子飞了",
+    "pinyin": "zhǔ shú de yā zǐ fēile",
+    "english": "Cooked duck fly"
+  },
+  {
+    "chinese": "常在河边走，哪有不湿鞋",
+    "pinyin": "cháng zài hé biān zǒu, nǎ yǒu bù shī xié",
+    "english": "Often in the river walk, how can we avoid wet shoes"
+  },
+  {
+    "chinese": "三脚猫",
+    "pinyin": "sānjiǎo māo",
+    "english": "House divided against itself"
+  },
+  {
+    "chinese": "吃闭门羹",
+    "pinyin": "chībìméngēng",
+    "english": "Admitted by"
+  },
+  {
+    "chinese": "三十年河东，三十年河西",
+    "pinyin": "sānshí nián hédōng, sānshí nián hé xī",
+    "english": "Three decades east, west three years"
+  },
+  {
+    "chinese": "土包子",
+    "pinyin": "tǔbāozi",
+    "english": "Bumpkin"
+  },
+  {
+    "chinese": "树大招风",
+    "pinyin": "shùdàzhāofēng",
+    "english": "being targeted"
+  },
+  {
+    "chinese": "酒逢知己千杯少",
+    "pinyin": "jiǔ féng zhījǐ qiān bēi shǎo",
+    "english": "Wine is a cup of tea"
+  },
+  {
+    "chinese": "当一天和尚撞一天钟",
+    "pinyin": "dāng yītiān héshàng zhuàng yītiān zhōng",
+    "english": "When one day a monk clock hit one"
+  },
+  {
+    "chinese": "是骡子是马拉出来遛遛",
+    "pinyin": "shì luózi shì mǎ lā chūlái liú liú",
+    "english": "Is a mule is a horse out of a walk"
+  },
+  {
+    "chinese": "一个鼻孔出气",
+    "pinyin": "yīgè bíkǒng chūqì",
+    "english": "Singing the same tune"
+  },
+  {
+    "chinese": "身在曹营心在汉",
+    "pinyin": "shēn zài cáo yíng xīn zài hàn",
+    "english": "Cao Ying Chinese heart"
+  },
+  {
+    "chinese": "瘦死的骆驼比马大",
+    "pinyin": "shòu sǐ de luòtuó bǐ mǎ dà",
+    "english": "Thin dead camel than Martha"
+  },
+  {
+    "chinese": "树欲静而风不止",
+    "pinyin": "shù yù jìng ér fēng bùzhǐ",
+    "english": "The tree still while the wind blows"
+  },
+  {
+    "chinese": "丑媳妇早晚也得见公婆",
+    "pinyin": "chǒu xífù zǎowǎn yě dé jiàn gōngpó",
+    "english": "Chou Xifu sooner or later have to see her"
+  },
+  {
+    "chinese": "胜者王侯败者贼",
+    "pinyin": "shèng zhě wánghóu bài zhě zéi",
+    "english": "The winner princely losers thief"
+  },
+  {
+    "chinese": "下三烂",
+    "pinyin": "xiàsānlàn",
+    "english": "Tatters"
+  },
+  {
+    "chinese": "上了贼船",
+    "pinyin": "shàngle zéi chuán",
+    "english": "On a pirate ship"
+  },
+  {
+    "chinese": "病急乱投医",
+    "pinyin": "bìng jí luàn tóuyī",
+    "english": "Styled"
+  },
+  {
+    "chinese": "打如意算盘",
+    "pinyin": "dǎ rúyì suànpán",
+    "english": "Wishful thinking"
+  },
+  {
+    "chinese": "龙生龙，凤生凤",
+    "pinyin": "lóng shēng lóng, fèng shēng fèng",
+    "english": "Born dragon, chicken born chicken"
+  },
+  {
+    "chinese": "不看僧面看佛面",
+    "pinyin": "bù kàn sēng miàn kàn fó miàn",
+    "english": "Do not look see Buddhist monks face surface"
+  },
+  {
+    "chinese": "雷声大、雨点小",
+    "pinyin": "léi shēng dà, yǔdiǎn xiǎo",
+    "english": "Thunder, little rain"
+  },
+  {
+    "chinese": "脸红脖子粗",
+    "pinyin": "liǎnhóng bózi cū",
+    "english": "Got angry"
+  },
+  {
+    "chinese": "一棍子打死",
+    "pinyin": "yī gùnzi dǎ sǐ",
+    "english": "Beat him to death"
+  },
+  {
+    "chinese": "拿鸡蛋碰石头",
+    "pinyin": "ná jīdàn pèng shítou",
+    "english": "Take an egg against a stone"
+  },
+  {
+    "chinese": "没有不透风的墙",
+    "pinyin": "méiyǒu bù tòufēng de qiáng",
+    "english": "Not an unventilated wall"
+  },
+  {
+    "chinese": "人怕出名猪怕壮",
+    "pinyin": "rén pà chūmíng zhū pà zhuàng",
+    "english": "Afraid of strong people afraid of becoming famous pig"
+  },
+  {
+    "chinese": "山中无老虎，猴子称大王",
+    "pinyin": "shānzhōng wú lǎohǔ, hóuzi chēng dàwáng",
+    "english": "Mountains tiger, monkey king"
+  },
+  {
+    "chinese": "杀鸡焉用宰牛刀",
+    "pinyin": "shā jī yān yòng zǎi niúdāo",
+    "english": "Slaughter chickens Yanyong chopper"
+  },
+  {
+    "chinese": "大树底下好乘凉",
+    "pinyin": "dà shù dǐxia hǎo chéngliáng",
+    "english": "Good shade tree"
+  },
+  {
+    "chinese": "跑龙套",
+    "pinyin": "pǎolóngtào",
+    "english": "play a small role"
+  },
+  {
+    "chinese": "七大姑，八大姨",
+    "pinyin": "qī dà gū, bā dàyí",
+    "english": "Seven Regardless of eight aunt"
+  },
+  {
+    "chinese": "一是一，二是二",
+    "pinyin": "yī shì yī, èr shì èr",
+    "english": "First, a second, second"
+  },
+  {
+    "chinese": "多个朋友多条路",
+    "pinyin": "duō gè péngyǒu duō tiáo lù",
+    "english": "Way more than friends"
+  },
+  {
+    "chinese": "下台阶",
+    "pinyin": "xià táijiē",
+    "english": "Down the steps"
+  },
+  {
+    "chinese": "打小算盘",
+    "pinyin": "dǎ xiǎo suànpán",
+    "english": "Abacus"
+  },
+  {
+    "chinese": "坐山观虎斗",
+    "pinyin": "zuò shān guān hǔ dòu",
+    "english": "Show from the sidelines"
+  },
+  {
+    "chinese": "羊毛出在羊身上",
+    "pinyin": "yángmáo chū zài yáng shēnshang",
+    "english": "Fleece"
+  },
+  {
+    "chinese": "一口吃成个胖子",
+    "pinyin": "yīkǒu chī chéng gè pàngzi",
+    "english": "Bite into a fat man"
+  },
+  {
+    "chinese": "屋漏偏逢连阴雨",
+    "pinyin": "wū lòu piān féng liányīnyǔ",
+    "english": "Leaky house, with rain every"
+  },
+  {
+    "chinese": "老油条",
+    "pinyin": "lǎo yóutiáo",
+    "english": "Oil Stick"
+  },
+  {
+    "chinese": "捅马蜂窝",
+    "pinyin": "tǒng mǎfēngwō",
+    "english": "Stir up a hornets' nest"
+  },
+  {
+    "chinese": "小意思",
+    "pinyin": "xiǎoyìsi",
+    "english": "Piece of cake"
+  },
+  {
+    "chinese": "倒打一耙",
+    "pinyin": "dàodǎyībà",
+    "english": "Falsely accuse"
+  },
+  {
+    "chinese": "陈芝麻、烂谷子",
+    "pinyin": "chén zhīma, làn gǔzi",
+    "english": "Chen sesame rotten corn"
+  },
+  {
+    "chinese": "一条龙",
+    "pinyin": "yītiáo lóng",
+    "english": "Train"
+  },
+  {
+    "chinese": "四两拨千斤",
+    "pinyin": "sìliǎngbōqiānjīn",
+    "english": "Skillfully deflected"
+  },
+  {
+    "chinese": "前怕狼，后怕虎",
+    "pinyin": "qián pà láng, hòupà hǔ",
+    "english": "Before the fear of the wolf, scared the tiger"
+  },
+  {
+    "chinese": "吃水不忘挖井人",
+    "pinyin": "chīshuǐ bù wàng wā jǐng rén",
+    "english": "Draft forget who dug"
+  },
+  {
+    "chinese": "有仇不报非君子",
+    "pinyin": "yǒu chóu bù bào fēi jūnzǐ",
+    "english": "Do not report any grudges against non-gentleman"
+  },
+  {
+    "chinese": "不倒翁",
+    "pinyin": "bùdǎowēng",
+    "english": "tumbler"
+  },
+  {
+    "chinese": "干打雷，不下雨",
+    "pinyin": "gān dǎléi, bù xià yǔ",
+    "english": "Dry thunder without rain"
+  },
+  {
+    "chinese": "鸡飞狗跳",
+    "pinyin": "jī fēi gǒu tiào",
+    "english": "Flying chicken jumps"
+  },
+  {
+    "chinese": "事后诸葛亮",
+    "pinyin": "shìhòu zhūgéliàng",
+    "english": "Hindsight"
+  },
+  {
+    "chinese": "落水狗",
+    "pinyin": "luòshuǐgǒu",
+    "english": "Reservoir Dogs"
+  },
+  {
+    "chinese": "板上钉钉",
+    "pinyin": "bǎnshàngdìngdīng",
+    "english": "That clinches it"
+  },
+  {
+    "chinese": "一碗水端平",
+    "pinyin": "yī wǎn shuǐ duān píng",
+    "english": "Equal justice"
+  },
+  {
+    "chinese": "烫手的山芋",
+    "pinyin": "tàngshǒu de shānyù",
+    "english": "Hot potato"
+  },
+  {
+    "chinese": "笑掉大牙",
+    "pinyin": "xiào diào dàyá",
+    "english": "Laugh"
+  },
+  {
+    "chinese": "一回生，二回熟",
+    "pinyin": "yī huíshēng, èr huí shú",
+    "english": "A resuscitation, two back cooked"
+  },
+  {
+    "chinese": "鱼与熊掌不可得兼",
+    "pinyin": "yú yǔ xióng zhǎng bùkě dé jiān",
+    "english": "Fish and can not have both"
+  },
+  {
+    "chinese": "咸鱼翻身",
+    "pinyin": "xián yú fānshēn",
+    "english": "Re-energized"
+  },
+  {
+    "chinese": "一根绳上的蚂蚱",
+    "pinyin": "yī gēn shéng shàng de mà zhà",
+    "english": "A rope grasshopper"
+  },
+  {
+    "chinese": "趟浑水",
+    "pinyin": "tāng hún shuǐ",
+    "english": "Muddy water"
+  },
+  {
+    "chinese": "狗腿子",
+    "pinyin": "gǒutuǐzi",
+    "english": "Henchman"
+  },
+  {
+    "chinese": "用在刀刃上",
+    "pinyin": "yòng zài dāorèn shàng",
+    "english": "Wisely"
+  },
+  {
+    "chinese": "鸡飞蛋打",
+    "pinyin": "jīfēidàndǎ",
+    "english": "Chicken eggs hit"
+  },
+  {
+    "chinese": "胳膊扭不过大腿",
+    "pinyin": "gēbó niǔ bù guo dàtuǐ",
+    "english": "Arm twisting, but the thigh"
+  },
+  {
+    "chinese": "饱汉不知饿汉饥",
+    "pinyin": "bǎo hàn bùzhī è hàn jī",
+    "english": "I do not know-fed starving suffer"
+  },
+  {
+    "chinese": "笑面虎",
+    "pinyin": "xiàomiànhǔ",
+    "english": "Smiling tiger"
+  },
+  {
+    "chinese": "二",
+    "pinyin": "èr",
+    "english": "two"
+  },
+  {
+    "chinese": "给力",
+    "pinyin": "gěilì",
+    "english": "awesome"
+  },
+  {
+    "chinese": "母老虎",
+    "pinyin": "mǔ lǎohǔ",
+    "english": "tigress"
+  },
+  {
+    "chinese": "五十步笑百步",
+    "pinyin": "wǔshí bù xiào bǎi bù",
+    "english": "Kettle black"
+  },
+  {
+    "chinese": "门外汉",
+    "pinyin": "ménwàihàn",
+    "english": "layman"
+  },
+  {
+    "chinese": "前人栽树，后人乘凉",
+    "pinyin": "qián rén zāi shù, hòu rén chéngliáng",
+    "english": "Predecessors trees, descendants cool"
+  },
+  {
+    "chinese": "烂泥扶不上墙",
+    "pinyin": "lànní fú bù shàng qiáng",
+    "english": "Mud on the wall does not help"
+  },
+  {
+    "chinese": "关公面前耍大刀",
+    "pinyin": "guāngōng miànqián shuǎ dàdāo",
+    "english": "Guan Gong in front of the masters"
+  },
+  {
+    "chinese": "高不成，低不就",
+    "pinyin": "gāo bùchéng, dī bù jiù",
+    "english": "High fragmentation, low not"
+  },
+  {
+    "chinese": "胳膊肘往外扭",
+    "pinyin": "gēbó zhǒu wǎngwài niǔ",
+    "english": "Twisted his elbow out"
+  },
+  {
+    "chinese": "长痛不如短痛",
+    "pinyin": "zhǎng tòng bùrú duǎn tòng",
+    "english": "Long pain as short-term pain"
+  },
+  {
+    "chinese": "酒香不怕巷子深",
+    "pinyin": "jiǔ xiāng bùpà xiàngzi shēn",
+    "english": "Sell ​​themselves"
+  },
+  {
+    "chinese": "一条路走到黑",
+    "pinyin": "yītiáo lù zǒu dào hēi",
+    "english": "A road go black"
+  },
+  {
+    "chinese": "不是鱼死，就是网破",
+    "pinyin": "bùshì yú sǐ, jiùshì wǎng pò",
+    "english": "Not a fish die, that net broken"
+  },
+  {
+    "chinese": "冰山一角",
+    "pinyin": "bīng shān yījiǎo",
+    "english": "tip of the iceberg"
+  },
+  {
+    "chinese": "身体是革命的本钱",
+    "pinyin": "shēntǐ shì gémìng de běnqián",
+    "english": "The body is the capital of revolution"
+  },
+  {
+    "chinese": "说风凉话",
+    "pinyin": "shuō fēngliánghuà",
+    "english": "Gloating"
+  },
+  {
+    "chinese": "紧箍咒",
+    "pinyin": "jǐngūzhòu",
+    "english": "Straitjacket"
+  },
+  {
+    "chinese": "唱双簧",
+    "pinyin": "chàng shuānghuáng",
+    "english": "collaborate with each other"
+  },
+  {
+    "chinese": "开空白支票",
+    "pinyin": "kāi kòngbái zhīpiào",
+    "english": "A blank check"
+  },
+  {
+    "chinese": "保护伞",
+    "pinyin": "bǎohùsǎn",
+    "english": "Umbrella"
+  },
+  {
+    "chinese": "一个萝卜一个坑",
+    "pinyin": "yīgè luóbo yīgè kēng",
+    "english": "A carrot a pit"
+  },
+  {
+    "chinese": "狗咬狗",
+    "pinyin": "gǒuyǎogǒu",
+    "english": "Dog Bite Dog"
+  },
+  {
+    "chinese": "唱高调",
+    "pinyin": "chàng gāodiào",
+    "english": "Chant bombastic words"
+  },
+  {
+    "chinese": "打水漂",
+    "pinyin": "dǎ shuǐ piào",
+    "english": "Naught"
+  },
+  {
+    "chinese": "开小差",
+    "pinyin": "kāixiǎochāi",
+    "english": "Desert"
+  },
+  {
+    "chinese": "两面派",
+    "pinyin": "liǎngmiànpài",
+    "english": "Double-dealing"
+  },
+  {
+    "chinese": "一盘散沙",
+    "pinyin": "yīpánsǎnshā",
+    "english": "Mess"
+  },
+  {
+    "chinese": "和稀泥",
+    "pinyin": "huò xīní",
+    "english": "Half-hearted"
+  },
+  {
+    "chinese": "敲竹杠",
+    "pinyin": "qiāozhúgàng",
+    "english": "Rip-off"
+  },
+  {
+    "chinese": "扯后腿",
+    "pinyin": "chě hòu tuǐ",
+    "english": "Che Houtui"
+  },
+  {
+    "chinese": "穿小鞋",
+    "pinyin": "chuānxiǎoxié",
+    "english": "Make trouble"
+  },
+  {
+    "chinese": "给他一点颜色看看",
+    "pinyin": "gěi tā yīdiǎn yánsè kàn kàn",
+    "english": "Give him a little color to see"
+  },
+  {
+    "chinese": "天高皇帝远",
+    "pinyin": "tiān gāo huángdì yuǎn",
+    "english": "Day high and the emperor far away"
+  },
+  {
+    "chinese": "拣软柿子捏",
+    "pinyin": "jiǎn ruǎn shìzi niē",
+    "english": "Pick any punches either pinching"
+  },
+  {
+    "chinese": "打马虎眼",
+    "pinyin": "dǎmǎhǔyǎn",
+    "english": "act dumb"
+  },
+  {
+    "chinese": "千里马",
+    "pinyin": "qiānlǐmǎ",
+    "english": "Maxima"
+  },
+  {
+    "chinese": "打擦边球",
+    "pinyin": "dǎ cābiānqiú",
+    "english": "Walking a fine line"
+  },
+  {
+    "chinese": "摸着石头过河",
+    "pinyin": "mōzhe shítouguò hé",
+    "english": "Trial and error"
+  },
+  {
+    "chinese": "半路出家",
+    "pinyin": "bànlùchūjiā",
+    "english": "Without solid foundation"
+  },
+  {
+    "chinese": "老狐狸",
+    "pinyin": "lǎohúlí",
+    "english": "Old fox"
+  },
+  {
+    "chinese": "一窝蜂",
+    "pinyin": "yīwōfēng",
+    "english": "Rush"
+  },
+  {
+    "chinese": "开夜车",
+    "pinyin": "kāiyèchē",
+    "english": "Work at night"
+  },
+  {
+    "chinese": "手心手背都是肉",
+    "pinyin": "shǒuxīn shǒubèi dōu shì ròu",
+    "english": "Palm back of the hand are the meat"
+  },
+  {
+    "chinese": "缩头乌龟",
+    "pinyin": "suō tóu wūguī",
+    "english": "Coward"
+  },
+  {
+    "chinese": "走过场",
+    "pinyin": "zǒuguòchǎng",
+    "english": "Going through the motions"
+  },
+  {
+    "chinese": "做文章",
+    "pinyin": "zuò wénzhāng",
+    "english": "Make an issue"
+  },
+  {
+    "chinese": "吃大锅饭",
+    "pinyin": "chī dàguōfàn",
+    "english": "Mess together"
+  },
+  {
+    "chinese": "戴高帽",
+    "pinyin": "dài gāo mào",
+    "english": "Wear a dunce cap"
+  },
+  {
+    "chinese": "秋后算账",
+    "pinyin": "qiūhòusuànzhàng",
+    "english": "The usual suspects"
+  },
+  {
+    "chinese": "僧多粥少",
+    "pinyin": "sēngduōzhōushǎo",
+    "english": "Demand exceeds supply"
+  },
+  {
+    "chinese": "坐冷板凳",
+    "pinyin": "zuò lěng bǎndèng",
+    "english": "Sitting on the bench"
+  },
+  {
+    "chinese": "不当家不知柴米贵",
+    "pinyin": "bùdāng jiā bùzhī cháimǐ guì",
+    "english": "Improper leading a poor family I do not know your"
+  },
+  {
+    "chinese": "红眼病",
+    "pinyin": "hóngyǎnbìng",
+    "english": "Pink eye"
+  },
+  {
+    "chinese": "葫芦里卖的是什么药",
+    "pinyin": "húlu lǐ mài de shì shénme yào",
+    "english": "What is snake oil medicine"
+  },
+  {
+    "chinese": "三句话不离本行",
+    "pinyin": "sān jù huà bùlí běn háng",
+    "english": "Shoppy"
+  },
+  {
+    "chinese": "糖衣炮弹",
+    "pinyin": "tángyī pàodàn",
+    "english": "Sugar-coated bullets"
+  },
+  {
+    "chinese": "树倒猢狲散",
+    "pinyin": "shù dǎo húsūn sàn",
+    "english": "Collapse and disappear"
+  },
+  {
+    "chinese": "硬骨头",
+    "pinyin": "yìng gǔtou",
+    "english": "Unyielding person"
+  },
+  {
+    "chinese": "二虎相争，必有一伤",
+    "pinyin": "èr hǔ xiāng zhēng, bì yǒuyī shāng",
+    "english": "Tigers fight, there must be an injury"
+  },
+  {
+    "chinese": "拆东墙，补西墙",
+    "pinyin": "chāi dōng qiáng, bǔ xī qiáng",
+    "english": "rob Peter to pay Paul"
+  },
+  {
+    "chinese": "大鱼吃小鱼",
+    "pinyin": "dà yú chī xiǎo yú",
+    "english": "Feeding Frenzy"
+  },
+  {
+    "chinese": "狐狸尾巴露出来了",
+    "pinyin": "húlí wěibā lùchūláile",
+    "english": "Fox tail exposed"
+  },
+  {
+    "chinese": "开绿灯",
+    "pinyin": "kāilǜdēng",
+    "english": "Green light"
+  },
+  {
+    "chinese": "歪瓜裂枣",
+    "pinyin": "wāi guā liè zǎo",
+    "english": "Crooked melon split dates"
+  },
+  {
+    "chinese": "小辫子",
+    "pinyin": "xiǎo biànzi",
+    "english": "Pigtail"
+  },
+  {
+    "chinese": "一头雾水",
+    "pinyin": "yītóu wù shuǐ",
+    "english": "Confused"
+  },
+  {
+    "chinese": "隔行如隔山",
+    "pinyin": "géháng rú géshān",
+    "english": "Gehangrugeshan"
+  },
+  {
+    "chinese": "一亩三分地",
+    "pinyin": "yī mǔ sān fēn de",
+    "english": "Third of an acre"
+  },
+  {
+    "chinese": "成也萧何，败也萧何",
+    "pinyin": "chéng yě xiāohé, bài yě xiāohé",
+    "english": "Winning or losing does not matter"
+  },
+  {
+    "chinese": "大水冲了龙王庙",
+    "pinyin": "dà shuǐ chōngle lóngwáng miào",
+    "english": "Big flush of the Dragon King Temple"
+  },
+  {
+    "chinese": "乱弹琴",
+    "pinyin": "luàntán qín",
+    "english": "Playin"
+  },
+  {
+    "chinese": "挤牙膏",
+    "pinyin": "jǐ yágāo",
+    "english": "Squeezing toothpaste"
+  },
+  {
+    "chinese": "墙倒众人推",
+    "pinyin": "qiáng dǎo zhòngrén tuī",
+    "english": "Push everyone down the wall"
+  },
+  {
+    "chinese": "莫须有",
+    "pinyin": "mòxūyǒu",
+    "english": "Groundless"
+  },
+  {
+    "chinese": "拿鸡毛当令箭",
+    "pinyin": "ná jīmáo dāng lìngjiàn",
+    "english": "Take a feather when the authority arrow"
+  },
+  {
+    "chinese": "捅破窗户纸",
+    "pinyin": "tǒng pò chuānghù zhǐ",
+    "english": "Pierce the windows of paper"
+  },
+  {
+    "chinese": "三字经",
+    "pinyin": "sānzìjīng",
+    "english": "Three Character Classic"
+  },
+  {
+    "chinese": "苍蝇不叮无缝的蛋",
+    "pinyin": "cāngyíng bù dīng wú fèng de dàn",
+    "english": "Flies do not hover eggs"
+  },
+  {
+    "chinese": "大跌眼镜",
+    "pinyin": "dà diēyǎnjìng",
+    "english": "Surprise"
+  },
+  {
+    "chinese": "说一千，道一万",
+    "pinyin": "shuō yīqiān, dào yī wàn",
+    "english": "He says a thousand, ten thousand channel"
+  },
+  {
+    "chinese": "绊脚石",
+    "pinyin": "bàn jiǎo shí",
+    "english": "stumbling block"
+  },
+  {
+    "chinese": "过五关、斩六将",
+    "pinyin": "guò wǔ guān, zhǎn liù jiàng",
+    "english": "A five-off, killing six"
+  },
+  {
+    "chinese": "求爷爷、告奶奶",
+    "pinyin": "qiú yéyé, gào nǎinai",
+    "english": "Seeking grandfather, grandmother reported"
+  },
+  {
+    "chinese": "羡慕嫉妒恨",
+    "pinyin": "xiànmù jídù hèn",
+    "english": "envy, jealousy, hate"
+  },
+  {
+    "chinese": "打掉门牙往肚里咽",
+    "pinyin": "dǎ diào ményá wǎng dù lǐ yàn",
+    "english": "Knocked out front teeth pharynx to the stomach"
+  },
+  {
+    "chinese": "唱对台戏",
+    "pinyin": "chàngduìtáixì",
+    "english": "Rival"
+  },
+  {
+    "chinese": "分一杯羹",
+    "pinyin": "fēn yībēi gēng",
+    "english": "A share"
+  },
+  {
+    "chinese": "变色龙",
+    "pinyin": "biànsèlóng",
+    "english": "chameleon"
+  },
+  {
+    "chinese": "独木不成林",
+    "pinyin": "dú mù bùchéng lín",
+    "english": "One tree does not make a forest"
+  },
+  {
+    "chinese": "既生瑜，何生亮？",
+    "pinyin": "jì shēng yú, héshēngliàng?",
+    "english": "Both Sheng Yu, Sheng-liang?"
+  },
+  {
+    "chinese": "撂挑子",
+    "pinyin": "Liàotiāozi",
+    "english": "Refuse to work"
+  },
+  {
+    "chinese": "敲门砖",
+    "pinyin": "qiāoménzhuān",
+    "english": "Stepping stone"
+  },
+  {
+    "chinese": "试金石",
+    "pinyin": "shìjīnshí",
+    "english": "Touchstone"
+  },
+  {
+    "chinese": "火烧眉毛",
+    "pinyin": "huǒ shāo méimáo",
+    "english": "Feel the burn"
+  },
+  {
+    "chinese": "空手套白狼",
+    "pinyin": "kōng shǒutào bái láng",
+    "english": "Sleight of hand tricks"
+  },
+  {
+    "chinese": "一瓶子不满，半瓶子晃荡",
+    "pinyin": "yī píngzi bùmǎn, bàn píngzi huàngdang",
+    "english": "A bottle discontent, half bottle sloshing"
+  },
+  {
+    "chinese": "脱了裤子放屁",
+    "pinyin": "tuōle kùzi fàngpì",
+    "english": "Tuoliaokuzi fart"
+  },
+  {
+    "chinese": "借东风",
+    "pinyin": "jiè dōngfēng",
+    "english": "By the wind"
+  },
+  {
+    "chinese": "白开水",
+    "pinyin": "báikāishuǐ",
+    "english": "Plain boiled water"
+  },
+  {
+    "chinese": "鲤鱼跳龙门",
+    "pinyin": "lǐyú tiào lóngmén",
+    "english": "Carp leaping"
+  },
+  {
+    "chinese": "强龙压不住地头蛇",
+    "pinyin": "qiáng lóng yā bù zhù dìtóushé",
+    "english": "Strong dragon snakes hid"
+  },
+  {
+    "chinese": "这山望着那山高",
+    "pinyin": "zhè shān wàngzhe nà shāngāo",
+    "english": "This mountain that looks high"
+  },
+  {
+    "chinese": "光脚的不怕穿鞋的",
+    "pinyin": "guāng jiǎo de bùpà chuān xié de",
+    "english": "Barefoot shoes are not afraid"
+  },
+  {
+    "chinese": "不成功，便成仁",
+    "pinyin": "bùchénggōng, biàn chéngrén",
+    "english": "Boom or bust"
+  },
+  {
+    "chinese": "滚刀肉",
+    "pinyin": "gǔn dāo ròu",
+    "english": "Hob meat"
+  },
+  {
+    "chinese": "久病成良医",
+    "pinyin": "jiǔ bìng chéngliáng yī",
+    "english": "Chronic illness into a good doctor"
+  },
+  {
+    "chinese": "枕边风",
+    "pinyin": "zhěn biān fēng",
+    "english": "Pillow talk"
+  },
+  {
+    "chinese": "一锤子买卖",
+    "pinyin": "yī chuízi mǎimài",
+    "english": "Deal or No Deal"
+  },
+  {
+    "chinese": "横挑鼻子竖挑眼",
+    "pinyin": "héng tiāo bízi shù tiāoyǎn",
+    "english": "Pick nose horizontal vertical hypercritical"
+  },
+  {
+    "chinese": "唱空城计",
+    "pinyin": "chàng kōngchéngjì",
+    "english": "Sing empty city"
+  },
+  {
+    "chinese": "一刀切",
+    "pinyin": "yīdāoqiē",
+    "english": "One size fits all"
+  },
+  {
+    "chinese": "旧瓶装新酒",
+    "pinyin": "jiù píngzhuāng xīnjiǔ",
+    "english": "Old wine in new bottles"
+  },
+  {
+    "chinese": "两面三刀",
+    "pinyin": "liǎngmiànsāndāo",
+    "english": "Double-dealing"
+  },
+  {
+    "chinese": "一把钥匙开一把锁",
+    "pinyin": "yī bǎ yàoshi kāi yī bǎ suǒ",
+    "english": "A key to open a lock"
+  },
+  {
+    "chinese": "打一巴掌，给个甜枣",
+    "pinyin": "dǎ yī bāzhang, gěi gè tián zǎo",
+    "english": "Hit a slap in the face, give sweet dates"
+  },
+  {
+    "chinese": "先君子后小人",
+    "pinyin": "xiān jūnzǐ hòu xiǎo rén",
+    "english": "After the first gentleman villain"
+  },
+  {
+    "chinese": "尺有所短，寸有所长",
+    "pinyin": "chǐ yǒu suǒ duǎn, cùn yǒu suǒ cháng",
+    "english": "Everyone has his strong and weak points"
+  },
+  {
+    "chinese": "出来混的，总要还的",
+    "pinyin": "chū lái hùn de, zǒng yào huán de",
+    "english": "Out to mix, always have to repay"
+  },
+  {
+    "chinese": "画虎不成反类犬",
+    "pinyin": "huà hǔ bù chéng fǎn lèi quǎn",
+    "english": "Poor imitation like a dog"
+  },
+  {
+    "chinese": "大意失荆州",
+    "pinyin": "dàyì shī jīngzhōu",
+    "english": "Lost Jingzhou"
+  },
+  {
+    "chinese": "卸磨杀驴",
+    "pinyin": "xiè mò shā lǘ",
+    "english": "Unloading grinding donkey"
+  },
+  {
+    "chinese": "躺着都中枪",
+    "pinyin": "tǎngzhe dōu zhōng qiāng",
+    "english": "They are lying in the gun"
+  },
+  {
+    "chinese": "脚正不怕鞋歪",
+    "pinyin": "jiǎo zhèng bùpà xié wāi",
+    "english": "Crooked foot is not afraid of shoes"
+  },
+  {
+    "chinese": "有奶就是娘",
+    "pinyin": "yǒu nǎi jiùshì niáng",
+    "english": "There is the mother milk"
+  },
+  {
+    "chinese": "肉烂在锅里",
+    "pinyin": "ròu làn zài guō lǐ",
+    "english": "Rotten meat in the pot"
+  },
+  {
+    "chinese": "说你胖你就喘",
+    "pinyin": "shuō nǐ pàng nǐ jiù chuǎn",
+    "english": "You say you're fat asthma"
+  },
+  {
+    "chinese": "擦屁股",
+    "pinyin": "cā pìgu",
+    "english": "Wipe"
+  },
+  {
+    "chinese": "皇帝女儿不愁嫁",
+    "pinyin": "huángdì nǚ'ér bù chóu jià",
+    "english": "Emperor daughter mentality"
+  },
+  {
+    "chinese": "一朝天子一朝臣",
+    "pinyin": "yī zhāo tiānzǐ yī zhāo chén",
+    "english": "Own courtiers"
+  },
+  {
+    "chinese": "活人让尿憋死",
+    "pinyin": "huó rén ràng niào biē sǐ",
+    "english": "Let the living suffocated in urine"
+  },
+  {
+    "chinese": "走马灯",
+    "pinyin": "zǒumǎdēng",
+    "english": "Revolving door"
+  },
+  {
+    "chinese": "花无百日红",
+    "pinyin": "huā wú bǎi rì hóng",
+    "english": "Flowers last forever"
+  },
+  {
+    "chinese": "东风压倒西风",
+    "pinyin": "dōngfēng yādǎo xīfēng",
+    "english": "East Eats West"
+  },
+  {
+    "chinese": "岁月是把杀猪刀",
+    "pinyin": "suìyuè shì bǎ shā zhū dāo",
+    "english": "Years is the Sha Zhudao"
+  },
+  {
+    "chinese": "丁是丁，卯是卯",
+    "pinyin": "dīng shì dīng, mǎo shì mǎo",
+    "english": "Ding Ding, d is the d"
+  },
+  {
+    "chinese": "多年的媳妇熬成婆",
+    "pinyin": "duōnián de xífù áo chéng pó",
+    "english": "Years his wife boiled woman"
+  },
+  {
+    "chinese": "强将手下无弱兵",
+    "pinyin": "qiáng jiàng shǒuxià wú ruò bīng",
+    "english": "No weak soldiers forcing men"
+  },
+  {
+    "chinese": "头痛医头，脚痛医脚",
+    "pinyin": "tóutòng yītóu, jiǎo tòng yī jiǎo",
+    "english": "Stop-gap measures"
+  },
+  {
+    "chinese": "拉不出屎来怨茅房",
+    "pinyin": "lā bù chū shǐ lái yuàn máofáng",
+    "english": "Pull no feces to blame latrine"
+  },
+  {
+    "chinese": "东方不亮西方亮",
+    "pinyin": "dōngfāng bù liàng xīfāng liàng",
+    "english": "East does not shine bright"
+  },
+  {
+    "chinese": "老牛拉破车",
+    "pinyin": "lǎo niú lā pò chē",
+    "english": "Buffaloes pulling broken car"
+  },
+  {
+    "chinese": "放卫星",
+    "pinyin": "fàng wèixīng",
+    "english": "Put satellites"
+  },
+  {
+    "chinese": "鸡同鸭讲",
+    "pinyin": "jī tóng yā jiǎng",
+    "english": "Chicken and Duck Talk"
+  },
+  {
+    "chinese": "一锅端",
+    "pinyin": "yīguōduān",
+    "english": "Side pot"
+  },
+  {
+    "chinese": "老皇历",
+    "pinyin": "lǎohuángli",
+    "english": "Old almanac"
+  },
+  {
+    "chinese": "家花没有野花香",
+    "pinyin": "jiā huā méiyǒu yě huāxiāng",
+    "english": "Home to spend no wild flowers"
+  },
+  {
+    "chinese": "又想当婊子又想立牌坊",
+    "pinyin": "yòu xiǎng dāng biǎo zi yòu xiǎng lì páifāng",
+    "english": "Wanting to bitch want Paifang"
+  },
+  {
+    "chinese": "遮羞布",
+    "pinyin": "zhēxiūbù",
+    "english": "Fig leaf"
+  },
+  {
+    "chinese": "耍花枪",
+    "pinyin": "shuǎ huāqiāng",
+    "english": "Shua Huaqiang"
+  },
+  {
+    "chinese": "又要马儿跑，又要马儿不吃草",
+    "pinyin": "yòu yào mǎ er pǎo, yòu yào mǎ er bu chī cǎo",
+    "english": "But also horse race, but also horse can not eat"
+  },
+  {
+    "chinese": "牛不喝水强按头",
+    "pinyin": "niú bù hē shuǐ qiáng àn tóu",
+    "english": "Cattle do not drink strong according to head"
+  },
+  {
+    "chinese": "摆乌龙",
+    "pinyin": "bǎi wū lóng",
+    "english": "Blunder"
+  },
+  {
+    "chinese": "各打五十大板",
+    "pinyin": "gè dǎ wǔshí dà bǎn",
+    "english": "Each six blows"
+  },
+  {
+    "chinese": "一个将军一个令",
+    "pinyin": "yīgè jiāngjūn yīgè lìng",
+    "english": "A way to make a general"
+  },
+  {
+    "chinese": "抱大腿",
+    "pinyin": "bào dàtuǐ",
+    "english": "Hold the thigh"
+  },
+  {
+    "chinese": "砸了锅",
+    "pinyin": "zále guō",
+    "english": "Smashed pot"
+  },
+  {
+    "chinese": "会哭的孩子有奶吃",
+    "pinyin": "huì kū de háizi yǒu nǎi chī",
+    "english": "Cry of the child Naichi"
+  },
+  {
+    "chinese": "二一添作五",
+    "pinyin": "èryī tiān zuò wǔ",
+    "english": "Twenty-one five for Tim"
+  },
+  {
+    "chinese": "风一阵，雨一阵",
+    "pinyin": "fēng yīzhèn, yǔ yīzhèn",
+    "english": "A burst of wind, rain burst"
+  },
+  {
+    "chinese": "剃头挑子一头热",
+    "pinyin": "tìtóu tiāozi yī tóu rè",
+    "english": "A hot sided affair"
+  },
+  {
+    "chinese": "远来的和尚会念经",
+    "pinyin": "yuǎn lái de héshàng huì niànjīng",
+    "english": "Far to the monks chanting"
+  },
+  {
+    "chinese": "揪辫子",
+    "pinyin": "jiū biànzi",
+    "english": "Pulling pigtails"
+  },
+  {
+    "chinese": "小姐的身子丫鬟的命",
+    "pinyin": "xiǎojiě de shēnzi yāhuan de mìng",
+    "english": "Miss maidservants body's life"
+  },
+  {
+    "chinese": "只见树木，不见森林",
+    "pinyin": "zhǐ jiàn shùmù, bùjiàn sēnlín",
+    "english": "See the trees but not the forest"
+  },
+  {
+    "chinese": "屁股决定脑袋",
+    "pinyin": "pìgu juédìng nǎodai",
+    "english": "We decided to head butt"
+  },
+  {
+    "chinese": "兔子尾巴长不了",
+    "pinyin": "tùzǐ wěibā cháng bùliǎo",
+    "english": "Rabbit's tail can't grow"
+  },
+  {
+    "chinese": "骑马找马",
+    "pinyin": "qímǎ zhǎo mǎ",
+    "english": "Look for a horse riding"
+  },
+  {
+    "chinese": "敲锣边儿",
+    "pinyin": "qiāo luó biān er",
+    "english": "Knock on the side"
+  },
+  {
+    "chinese": "扣帽子",
+    "pinyin": "kòu màozi",
+    "english": "Putting labels"
+  },
+  {
+    "chinese": "拔出萝卜带出泥",
+    "pinyin": "bá chū luóbo dài chū ní",
+    "english": "Pull out the carrot out of the mud"
+  },
+  {
+    "chinese": "满嘴跑火车",
+    "pinyin": "mǎnzuǐ pǎo huǒchē",
+    "english": "Mouth running train"
+  },
+  {
+    "chinese": "温水煮青蛙",
+    "pinyin": "wēnshuǐ zhǔ qīngwā",
+    "english": "Warm boiled frog"
+  },
+  {
+    "chinese": "万金油",
+    "pinyin": "wànjīnyóu",
+    "english": "Jack of all trades"
+  },
+  {
+    "chinese": "树挪死，人挪活",
+    "pinyin": "shù nuó sǐ, rén nuó huó",
+    "english": "Move trees die, people move to live"
+  },
+  {
+    "chinese": "按下葫芦起了瓢",
+    "pinyin": "àn xià húlu qǐle piáo",
+    "english": "Press played a gourd dipper"
+  },
+  {
+    "chinese": "到什么山唱什么歌",
+    "pinyin": "dào shénme shān chàng shénme gē",
+    "english": "To what mountain, what songs"
+  },
+  {
+    "chinese": "拔根汗毛比腰粗",
+    "pinyin": "bá gēn hànmáo bǐ yāo cū",
+    "english": "Uproot hairs than large waist"
+  },
+  {
+    "chinese": "阎王好见，小鬼难搪",
+    "pinyin": "yánwáng hǎo jiàn, xiǎoguǐ nán táng",
+    "english": "Hades good to see, hard to keep out the devil"
+  },
+  {
+    "chinese": "不见兔子不撒鹰",
+    "pinyin": "bùjiàn tùzǐ bù sā yīng",
+    "english": "Not rabbits not spread eagle"
+  },
+  {
+    "chinese": "当面锣，对面鼓",
+    "pinyin": "dāngmiàn luó, duìmiàn gǔ",
+    "english": "Face to face gongs, drums across"
+  },
+  {
+    "chinese": "眼大肚子小",
+    "pinyin": "yǎn dàdùzi xiǎo",
+    "english": "Eyes belly small"
+  },
+  {
+    "chinese": "浅水养不了大鱼",
+    "pinyin": "qiǎnshuǐ yǎng bùliǎo dà yú",
+    "english": "We can not keep fish in shallow water"
+  },
+  {
+    "chinese": "吃别人嚼过的馍不香",
+    "pinyin": "chī biérén juéguò de mó bù xiāng",
+    "english": "Eat others chew over the bun is not fragrant"
+  },
+  {
+    "chinese": "起大早，赶晚集",
+    "pinyin": "qǐ dà zǎo, gǎn wǎn jí",
+    "english": "We got up early, catch late set"
+  },
+  {
+    "chinese": "打不着狐狸惹身骚",
+    "pinyin": "dǎ bùzháo húlí rě shēn sāo",
+    "english": "Fox could not beat Sao provoke body"
+  },
+  {
+    "chinese": "多面手",
+    "pinyin": "duōmiànshǒu",
+    "english": "All-rounder"
+  },
+  {
+    "chinese": "鸟枪换炮",
+    "pinyin": "niǎoqiānghuànpào",
+    "english": "Shotgun"
+  },
+  {
+    "chinese": "矬子里拔将军",
+    "pinyin": "cuózi lǐ bá jiāngjūn",
+    "english": "Cuozi pull generals"
+  },
+  {
+    "chinese": "给个棒槌就当针",
+    "pinyin": "gěi gè bàngchuí jiù dāng zhēn",
+    "english": "When the needle on to a wooden club"
+  },
+  {
+    "chinese": "捧臭脚",
+    "pinyin": "pěng chòu jiǎo",
+    "english": "Holding smelly feet"
+  },
+  {
+    "chinese": "咬人的狗不露齿",
+    "pinyin": "yǎo rén de gǒu bù lù chǐ",
+    "english": "Dog bite grin"
+  },
+  {
+    "chinese": "炒冷饭",
+    "pinyin": "chǎolěngfàn",
+    "english": "Same old stuff"
+  },
+  {
+    "chinese": "一只羊是赶，一群羊也是放",
+    "pinyin": "yī zhǐ yáng shì gǎn, yīqún yáng yěshì fàng",
+    "english": "Is to catch a sheep, a flock of sheep is put"
+  },
+  {
+    "chinese": "虱子多了不咬，账多了不愁",
+    "pinyin": "shīzi duō liǎo bù yǎo, zhàng duō liǎo bù chóu",
+    "english": "Lice do not bite, much to worry about account"
+  },
+  {
+    "chinese": "攒鸡毛，凑掸子",
+    "pinyin": "zǎn jīmáo, còu dǎnzi",
+    "english": "Save feather, duster Minato"
+  },
+  {
+    "chinese": "骑脖子拉屎",
+    "pinyin": "qí bózi lā shǐ",
+    "english": "Riding neck shit"
+  },
+  {
+    "chinese": "指着和尚骂秃子",
+    "pinyin": "zhǐzhe héshàng mà tūzi",
+    "english": "Pointing to the monk scolded Baldy"
+  },
+  {
+    "chinese": "蚂蚱也是肉",
+    "pinyin": "mà zhà yěshì ròu",
+    "english": "Grasshopper is meat"
+  },
+  {
+    "chinese": "背着抱着一般沉",
+    "pinyin": "bèizhe bàozhe yībān chén",
+    "english": "Carrying a holding general Shen"
+  },
+  {
+    "chinese": "一言堂",
+    "pinyin": "yīyántáng",
+    "english": "Lays down the law"
+  },
+  {
+    "chinese": "乱拳打死老师傅",
+    "pinyin": "luàn quán dǎ sǐ lǎo shīfù",
+    "english": "Chaos boxing killed old master"
+  },
+  {
+    "chinese": "端起碗来吃肉，放下筷子骂娘",
+    "pinyin": "duān qǐ wǎn lái chī ròu, fàngxià kuàizi màniáng",
+    "english": "Picking to eat meat, put down the chopsticks BS-ing"
+  },
+  {
+    "chinese": "出头的椽子先烂",
+    "pinyin": "chū tóu de chuánzi xiān làn",
+    "english": "Somethings rotten rafters first"
+  },
+  {
+    "chinese": "一马勺坏一锅",
+    "pinyin": "yī mǎ sháo huài yī guō",
+    "english": "A ladle bad pot"
+  },
+  {
+    "chinese": "终日打雁，让雁啄了眼",
+    "pinyin": "zhōngrì dǎ yàn, ràng yàn zhuóle yǎn",
+    "english": "Batangas day, let geese peck at his eyes"
+  },
+  {
+    "chinese": "老鸹嫌猪黑",
+    "pinyin": "lǎoguā xián zhū hēi",
+    "english": "Laogua too black pig"
+  },
+  {
+    "chinese": "别人牵驴你拔橛",
+    "pinyin": "biérén qiān lǘ nǐ bá jué",
+    "english": "Others you pull the donkey chunks"
+  },
+  {
+    "chinese": "仔卖爷田不心疼",
+    "pinyin": "zǐ mài yé tián bù xīnténg",
+    "english": "Aberdeen do not feel bad selling Ye Tian"
+  },
+  {
+    "chinese": "萝卜快了不洗泥",
+    "pinyin": "luóbo kuài liǎo bù xǐ ní",
+    "english": "Do not wash mud radish fast"
+  },
+  {
+    "chinese": "接地气",
+    "pinyin": "jiēdì qì",
+    "english": "Down to earth"
+  }
+]

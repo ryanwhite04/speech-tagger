@@ -252,7 +252,11 @@ export default class App extends Component {
   })
   next = () => {
     this.log('next', this.props)
-    const sentence = 1 + parseInt(this.props.match.params.sentence, 10)
+    let {
+      sentence
+    } = this.props.match.params
+
+    sentence = 1 + parseInt(sentence, 10)
     this.props.history.push(`/${sentence}`, {
       blob: false,
       tags: [],
@@ -268,11 +272,24 @@ export default class App extends Component {
     return new URLSearchParams(this.props.location.search)
   }
   get transcript() {
-    let [hanzi, pinyin] = this.props.transcripts[this.props.match.params.sentence]
-    return [
-      hanzi.replace(/\s+/g, '').split(''),
-      pinyin.split(' '),
-    ]
+    let { chinese, pinyin, english } = this.props.transcripts[this.props.match.params.sentence]
+    chinese = chinese.replace(/[,\s]+/g, '').split('')
+    pinyin = romanize(pinyin).split(' ')
+    let tones = pinyin.map(syllable => {
+      return [
+        /[āēīōūǖ]/,
+        /[áéíóúǘ]/,
+        /[ǎěǐǒǔǚ]/,
+        /[àèìòùǜ]/,
+      ].reduce((tone, regex, i) =>
+        syllable.search(regex) > -1 ?
+          !tone ? (i+1) : -1 : tone,
+      0)
+    })
+    log('transcript', {
+      chinese, pinyin, english, tones
+    })
+    return [chinese, pinyin, english, tones]
   }
   get count() {
     return this.transcript[0].length
@@ -500,4 +517,15 @@ function format(unix) {
   log('format', { unix })
   let seconds = (~~(unix/1000)).toString().slice(-2).padStart(2, 0)
   return `00:${seconds}.${unix % 1000}`
+}
+
+function romanize(pinyin) {
+
+  // 216
+  return pinyin
+    .replace('\'', ' ')
+    .replace(/([^bcdfhjklmpqrstvwyxz])([bcdfhjklmpqrstvwyxz])/g, (s, a, b) => `${a} ${b}`)
+    .replace(/([^bcdfhjklmpqrstvwyxz])ng([^bcdfhjklmpqrstvwyxz ,])/g, (s, a, b) => `${a}n g${b}`)
+    // .replace(' ng', 'ng')
+    // .replace(' n', 'n')
 }

@@ -3,7 +3,8 @@ import ReactDOM from 'react-dom'
 import './index.css'
 import App from './App'
 import registerServiceWorker from './registerServiceWorker'
-import transcripts from './transcripts'
+import idioms from './idioms'
+import chengyu from './chengyu'
 import config from './config'
 import { BrowserRouter as Router, Route, Redirect, Switch } from 'react-router-dom'
 
@@ -20,11 +21,12 @@ ReactDOM.render(<Router basename={config.PUBLIC_URL}>
       pathname: localStorage.getItem('sentence') || '/0',
       state,
     }}/>
-    <Route path="/:sentence" render={props => (
-      props.location.state && props.match.params.sentence ?
-        (<App version={config.version} {...props} transcripts={transcripts}/>) :
+    <Route path="/:sentence" render={props => {
+      return (props.location.state && props.match.params.sentence ?
+        (<App version={config.version} {...props} transcripts={[...idioms, ...chengyu]}/>) :
         (<Redirect to={{...props.location, state}}/>)
-    )}/>
+      )
+    }}/>
   </Switch>
 </Router>, document.getElementById('root'))
 registerServiceWorker()
