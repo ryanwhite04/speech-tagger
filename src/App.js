@@ -135,8 +135,8 @@ export default class App extends Component {
       e.returnValue = false
     }
     this.log('search', this.search)
-    // this.props.location.state.record && !this.complete ?
-    // this.tag() :
+    this.props.location.state.record && !this.complete ?
+    this.tag() :
     this.toggle()
   }
   onEnter = e => {
@@ -274,7 +274,14 @@ export default class App extends Component {
   get transcript() {
     let { chinese, pinyin, english } = this.props.transcripts[this.props.match.params.sentence]
     chinese = chinese.replace(/[,\s]+/g, '').split('')
+    chinese = chinese.reduce((stripped, syllable, i) => {
+      return syllable === '，' ? stripped : [...stripped, (chinese[i+1] === '，') ? `${syllable}，` : syllable]
+    }, [])
+      
     pinyin = romanize(pinyin).split(' ')
+    pinyin = pinyin.reduce((stripped, syllable, i) => {
+      return syllable ? [...stripped, pinyin[i+1] ? syllable : `${syllable} `] : stripped
+    }, [])
     let tones = pinyin.map(syllable => {
       return [
         /[āēīōūǖ]/,
@@ -362,15 +369,20 @@ export default class App extends Component {
                 onStop={onStop}
               />
             </CardMedia>
-            <CardHeader title="Hanzi" subtitle="For native chinese speakers"/>
+            <CardHeader title="Hanzi" subtitle="For native chinese speakers."/>
             <CardText>
               <span style={{ color: cyan500 }}>{transcript[0].slice(0, tags.length).join('')}</span>
               <span>{transcript[0].slice(tags.length).join('')}</span>
             </CardText>
-            <CardHeader title="Pinyin" subtitle="For learners of mandarin"/>
+            <CardHeader title="Pinyin" subtitle="For learners of mandarin."/>
             <CardText>
-              <span style={{ color: cyan500 }}>{transcript[1].slice(0, tags.length).join(' ')} </span>
-              <span>{transcript[1].slice(tags.length).join(' ')}</span>
+              <span style={{ color: cyan500 }}>{transcript[1].slice(0, tags.length).join('')} </span>
+              <span>{transcript[1].slice(tags.length).join('')}</span>
+            </CardText>
+            <CardHeader title="Tones" subtitle="Actual tones, multiple tones indicate you can pronounce either."/>
+            <CardText>
+              <span style={{ color: cyan500 }}>{transcript[3].slice(0, tags.length).join('')} </span>
+              <span>{transcript[3].slice(tags.length).join('')}</span>
             </CardText>
             <CardActions>{
               record ?
@@ -528,4 +540,33 @@ function romanize(pinyin) {
     .replace(/([^bcdfhjklmpqrstvwyxz])ng([^bcdfhjklmpqrstvwyxz ,])/g, (s, a, b) => `${a}n g${b}`)
     // .replace(' ng', 'ng')
     // .replace(' n', 'n')
+}
+
+function extractTone(syllable) {
+  return [
+    /[āēīōūǖ]/,
+    /[áéíóúǘ]/,
+    /[ǎěǐǒǔǚ]/,
+    /[àèìòùǜ]/,
+  ].reduce((tone, regex, i) =>
+    syllable.search(regex) > -1 ? !tone ? (i+1) : -1 : tone, 0)
+}
+
+function transcript({ chinese, pinyin, english }) {
+  chinese = chinese
+    .replace(/[,\s]+/g, '')
+    .split('')
+    .reduce((stripped, syllable, i) => {
+      return syllable === '，' ? stripped : [...stripped, (chinese[i+1] === '，') ? `${syllable}，` : syllable]
+    }, [])
+    
+  pinyin = romanize(pinyin)
+    .split(' ')
+    .reduce((stripped, syllable, i) => {
+      return syllable ? [...stripped, pinyin[i+1] ? syllable : `${syllable} `] : stripped
+    }, [])
+  
+  const tones = pinyin.map(extractTone)
+  
+  return [chinese, pinyin, english, tones]
 }
